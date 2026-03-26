@@ -123,6 +123,31 @@ const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name
       <h3>No sponsorships found</h3>
       <p>Try adjusting your filters or search term</p>
     </div>
+
+    <!-- Newsletter Signup -->
+    <div style="max-width: 600px; margin: 3rem auto 0; text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(236,72,153,0.15)); border: 1px solid rgba(168,85,247,0.3); border-radius: 1rem;">
+      <h2 style="margin-bottom: 0.5rem;">Stay in the Loop</h2>
+      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 1.5rem;">
+        Get the latest sponsorship opportunities, tools, and streamer tips delivered to your inbox.
+      </p>
+      <form action="https://formsubmit.co/brian@fairlyoddstreamers.com" method="POST" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New FOS Newsletter Signup">
+        <input type="hidden" name="_next" value="https://fairlyoddstreamers.com/resources/sponsorships/?subscribed=true">
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          style="padding: 0.75rem 1rem; min-width: 280px; font-size: 1rem;"
+        />
+        <button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+          Subscribe
+        </button>
+      </form>
+      <p style="font-size: 0.8rem; color: #666; margin-top: 1rem; margin-bottom: 0;">No spam, unsubscribe anytime.</p>
+    </div>
   </div>
 </div>
 

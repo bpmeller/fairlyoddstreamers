@@ -23,11 +23,11 @@ const { Content } = await sponsor.render();
 <div class="section-narrow">
   <div class="container">
     <!-- Breadcrumb -->
-    <nav style="margin-bottom: 2rem; font-size: 0.875rem;">
+    <div style="margin-bottom: 2rem; font-size: 0.875rem; position: relative; z-index: 1;">
       <a href="/resources/sponsorships/" style="color: #a855f7;">Sponsorships</a>
       <span style="color: #666; margin: 0 0.5rem;">/</span>
       <span style="color: #b0b0b8;">{sponsor.data.name}</span>
-    </nav>
+    </div>
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
       <!-- Left Column: Logo and Key Info -->

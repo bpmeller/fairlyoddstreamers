@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const broadcastTools = await getCollection('broadcast-tools');
-const sorted = broadcastTools.sort((a, b) => a.data.name.localeCompare(b.data.name));
+const sorted = broadcastTools.sort((a, b) => (a.data.order || 0) - (b.data.order || 0) || a.data.name.localeCompare(b.data.name));
 ---
 
 <BaseLayout
@@ -21,16 +21,40 @@ const sorted = broadcastTools.sort((a, b) => a.data.name.localeCompare(b.data.na
     <div class="grid grid-3">
       {
         sorted.map((tool) => (
-          <div class="card">
-            <h3 style="color: #ffffff; margin-bottom: 0.5rem;">{tool.data.name}</h3>
-            {tool.data.website && (
-              <p style="margin-bottom: 1rem;">
-                <a href={tool.data.website} target="_blank" rel="noopener noreferrer">
-                  Visit Website →
-                </a>
-              </p>
+          <div class="card" style="display: flex; flex-direction: column; height: 100%; background: #1a1a1a; border: 1px solid #333; border-radius: 8px; overflow: hidden;">
+            {tool.data.photo && (
+              <div style="width: 100%; height: 200px; background: #0a0a0a; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                <img src={tool.data.photo} alt={tool.data.name} style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
             )}
-            {tool.data.category && <p style="color: #a855f7; font-weight: 600;">{tool.data.category}</p>}
+            <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 style="color: #ffffff; margin: 0 0 0.5rem 0; font-size: 1.25rem;">{tool.data.name}</h3>
+
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                {tool.data.cost && (
+                  <span style="display: inline-block; background: #0f766e; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">{tool.data.cost}</span>
+                )}
+              </div>
+
+              {(tool.data.shortDescription || tool.data.superShortDesc) && (
+                <p style="color: #b0b0b8; font-size: 0.95rem; line-height: 1.5; margin: 0 0 1rem 0; flex: 1;">
+                  {tool.data.shortDescription || tool.data.superShortDesc}
+                </p>
+              )}
+
+              <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                {tool.data.website && (
+                  <a href={tool.data.website} target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #7c3aed; color: white; padding: 0.75rem 1rem; border-radius: 4px; text-align: center; text-decoration: none; font-weight: 600; transition: background 0.2s;">
+                    Visit Website →
+                  </a>
+                )}
+                {tool.data.setupGuide && (
+                  <a href={tool.data.setupGuide} target="_blank" rel="noopener noreferrer" style="display: inline-block; background: transparent; color: #7c3aed; padding: 0.5rem 1rem; border: 1px solid #7c3aed; border-radius: 4px; text-align: center; text-decoration: none; font-weight: 600; transition: all 0.2s;">
+                    Setup Guide →
+                  </a>
+                )}
+              </div>
+            </div>
           </div>
         ))
       }
