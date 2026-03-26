@@ -1,0 +1,5 @@
+---
+name: Wizebot
+slug: wizebot
+---
+

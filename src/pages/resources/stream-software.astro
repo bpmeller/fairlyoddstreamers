@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const broadcastTools = await getCollection('broadcast-tools');
+const sorted = broadcastTools.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<BaseLayout
+  title="Broadcast Software for Streamers - Fairly Odd Streamers"
+  description="Discover the best broadcasting software for streaming on Twitch, YouTube, and other platforms."
+>
+
+<div class="section-narrow">
+  <div class="container">
+    <h1 style="margin-bottom: 1rem;">Broadcast Software</h1>
+    <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 3rem;">
+      Professional broadcasting software to power your streams.
+    </p>
+
+    <div class="grid grid-3">
+      {
+        sorted.map((tool) => (
+          <div class="card">
+            <h3 style="color: #ffffff; margin-bottom: 0.5rem;">{tool.data.name}</h3>
+            {tool.data.website && (
+              <p style="margin-bottom: 1rem;">
+                <a href={tool.data.website} target="_blank" rel="noopener noreferrer">
+                  Visit Website →
+                </a>
+              </p>
+            )}
+            {tool.data.category && <p style="color: #a855f7; font-weight: 600;">{tool.data.category}</p>}
+          </div>
+        ))
+      }
+    </div>
+
+    {sorted.length === 0 && <p style="text-align: center; color: #b0b0b8;">No broadcast tools found.</p>}
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="/resources/sponsorships/" class="btn btn-primary">Explore Sponsorships</a>
+    </div>
+  </div>
+</div>
+</BaseLayout>

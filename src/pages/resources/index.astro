@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const resources = [
+  {
+    title: 'Sponsorships & Affiliates',
+    description: 'Browse 100+ sponsorship and affiliate opportunities for streamers of all sizes.',
+    href: '/resources/sponsorships/',
+    icon: '💰',
+    count: '100+',
+  },
+  {
+    title: 'Analytics Tools',
+    description: 'Track your growth with the best analytics platforms for Twitch, YouTube, and Kick.',
+    href: '/resources/analytics/',
+    icon: '📊',
+  },
+  {
+    title: 'Chat Bots',
+    description: 'Automate your chat moderation and engagement with top streaming bots.',
+    href: '/resources/bots/',
+    icon: '🤖',
+  },
+  {
+    title: 'Music for Streaming',
+    description: 'Copyright-safe music libraries so you can stream without worrying about DMCA.',
+    href: '/resources/music/',
+    icon: '🎵',
+  },
+  {
+    title: 'Graphics & Overlays',
+    description: 'Level up your stream\'s look with overlays, alerts, panels, and more.',
+    href: '/resources/graphics/',
+    icon: '🎨',
+  },
+  {
+    title: 'Broadcast Software',
+    description: 'Stream like a pro with the best broadcasting software and tools.',
+    href: '/resources/stream-software/',
+    icon: '📡',
+  },
+  {
+    title: 'Streaming Tools',
+    description: 'Essential tools and utilities to enhance your streaming workflow.',
+    href: '/resources/twitch-tools/',
+    icon: '🛠️',
+  },
+];
+---
+
+<BaseLayout
+  title="Streaming Resources - Fairly Odd Streamers"
+  description="Curated resources for livestreamers: sponsorships, analytics, bots, music, graphics, broadcast software, and more."
+>
+  <div class="section-narrow">
+    <div class="container">
+      <h1>Streaming Resources</h1>
+      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 2.5rem;">
+        Everything you need to grow and monetize your livestream, all in one place.
+      </p>
+
+      <div class="resource-grid">
+        {resources.map((r) => (
+          <a href={r.href} class="card resource-card-link">
+            <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">{r.icon}</div>
+            <h3 style="margin-bottom: 0.5rem;">{r.title}</h3>
+            {r.count && <span class="badge" style="margin-bottom: 0.5rem;">{r.count}</span>}
+            <p style="color: #b0b0b8; font-size: 0.95rem;">{r.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .resource-card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, border-color 0.2s;
+    padding: 1.5rem;
+  }
+  .resource-card-link:hover {
+    transform: translateY(-4px);
+    border-color: #a855f7;
+  }
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: white;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+</style>

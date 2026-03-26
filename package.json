@@ -1,0 +1,14 @@
+{
+  "name": "fos-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Fairly Odd Streamers - Astro migration",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.3.0"
+  }
+}

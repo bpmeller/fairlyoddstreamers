@@ -1,0 +1,166 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const sponsorships = await getCollection('sponsorships');
+  return sponsorships.map((sponsor) => ({
+    params: { slug: sponsor.slug },
+    props: { sponsor },
+  }));
+}
+
+const { sponsor } = Astro.props;
+const { Content } = await sponsor.render();
+---
+
+<BaseLayout
+  title={`${sponsor.data.name} - Sponsorship for Streamers`}
+  description={`${sponsor.data.name} sponsorship opportunity. ${sponsor.data.category} - ${sponsor.data.type}`}
+  ogImage={sponsor.data.logo}
+>
+
+<div class="section-narrow">
+  <div class="container">
+    <!-- Breadcrumb -->
+    <nav style="margin-bottom: 2rem; font-size: 0.875rem;">
+      <a href="/resources/sponsorships/" style="color: #a855f7;">Sponsorships</a>
+      <span style="color: #666; margin: 0 0.5rem;">/</span>
+      <span style="color: #b0b0b8;">{sponsor.data.name}</span>
+    </nav>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+      <!-- Left Column: Logo and Key Info -->
+      <div>
+        {
+          sponsor.data.logo && (
+            <img
+              src={sponsor.data.logo}
+              alt={sponsor.data.name}
+              style="width: 100%; max-width: 300px; margin-bottom: 2rem; border-radius: 0.75rem;"
+            />
+          )
+        }
+
+        <h1 style="margin-bottom: 1.5rem;">{sponsor.data.name}</h1>
+
+        <!-- Key Details -->
+        <div class="card" style="margin-bottom: 2rem;">
+          <div class="card-body">
+            {
+              sponsor.data.category && (
+                <div style="margin-bottom: 1rem;">
+                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
+                    Category
+                  </label>
+                  <span style="color: #ffffff;">{sponsor.data.category}</span>
+                </div>
+              )
+            }
+            {
+              sponsor.data.type && (
+                <div style="margin-bottom: 1rem;">
+                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
+                    Type
+                  </label>
+                  <span class="badge" style="text-transform: capitalize;">
+                    {sponsor.data.type}
+                  </span>
+                </div>
+              )
+            }
+            {
+              sponsor.data.compensation && (
+                <div style="margin-bottom: 1rem;">
+                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
+                    Compensation
+                  </label>
+                  <span style="color: #a855f7; font-weight: 600;">{sponsor.data.compensation}</span>
+                </div>
+              )
+            }
+            {
+              sponsor.data.sponsorshipType && (
+                <div style="margin-bottom: 1rem;">
+                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
+                    Sponsorship Type
+                  </label>
+                  <span style="color: #ffffff;">{sponsor.data.sponsorshipType}</span>
+                </div>
+              )
+            }
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="card-footer" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            {
+              sponsor.data.applicationLink && (
+                <a href={sponsor.data.applicationLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  Apply Now →
+                </a>
+              )
+            }
+            {
+              sponsor.data.website && (
+                <a href={sponsor.data.website} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  Visit Website
+                </a>
+              )
+            }
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Description -->
+      <div>
+        <div class="card">
+          <div class="card-body">
+            <h2 style="margin-bottom: 1.5rem;">Overview</h2>
+            <div style="color: #b0b0b8; line-height: 1.8;">
+              <Content />
+            </div>
+          </div>
+        </div>
+
+        <!-- FOS Affiliate Info -->
+        {
+          sponsor.data.fosAffiliate === 'Yes' && (
+            <div class="card" style="margin-top: 2rem; background-color: rgba(168, 85, 247, 0.1); border: 1px solid var(--accent-purple);">
+              <div class="card-body">
+                <h3 style="color: #a855f7; margin-bottom: 1rem;">FOS Affiliate Program</h3>
+                <p>This sponsorship is part of our affiliate network.</p>
+                {sponsor.data.fosAffiliateLink && (
+                  <a href={sponsor.data.fosAffiliateLink} class="btn btn-primary" style="margin-top: 1rem;">
+                    Learn More
+                  </a>
+                )}
+              </div>
+            </div>
+          )
+        }
+      </div>
+    </div>
+
+    <!-- Back Link -->
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+      <a href="/resources/sponsorships/" class="btn btn-secondary">← Back to All Sponsorships</a>
+    </div>
+  </div>
+</div>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{sponsor.data.name}",
+    "description": "{sponsor.data.category} sponsorship opportunity",
+    "image": "{sponsor.data.logo}",
+    "datePublished": "{sponsor.data.publishDate}",
+    "author": {
+      "@type": "Organization",
+      "name": "Fairly Odd Streamers"
+    }
+  }
+</script>
+</BaseLayout>

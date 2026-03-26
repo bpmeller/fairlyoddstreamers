@@ -1,0 +1,181 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const sponsorships = await getCollection('sponsorships');
+
+// Get unique categories and types
+const categories = [...new Set(sponsorships.map((s) => s.data.category).filter(Boolean))].sort();
+const types = [...new Set(sponsorships.map((s) => s.data.type).filter(Boolean))].sort();
+
+const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<BaseLayout
+  title="Sponsorships for Streamers - Fairly Odd Streamers"
+  description={`Discover ${sponsorships.length}+ sponsorship opportunities for livestreamers. Find affiliate programs and brand partnerships.`}
+>
+
+<div class="section-narrow">
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1>100+ Sponsorships for Streamers</h1>
+      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 2rem;">
+        Discover brand partnerships and affiliate programs tailored for content creators. Filter by category, type, and
+        compensation.
+      </p>
+
+      <!-- Search and Filter Controls -->
+      <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem;">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search sponsorships by name..."
+          style="padding: 0.75rem 1rem; font-size: 1rem;"
+        />
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <select
+            id="categoryFilter"
+            style="flex: 1; min-width: 200px; padding: 0.75rem 1rem;"
+          >
+            <option value="">All Categories</option>
+            {
+              categories.map((cat) => (
+                <option value={cat}>{cat}</option>
+              ))
+            }
+          </select>
+
+          <select
+            id="typeFilter"
+            style="flex: 1; min-width: 200px; padding: 0.75rem 1rem;"
+          >
+            <option value="">All Types</option>
+            {
+              types.map((type) => (
+                <option value={type}>{type}</option>
+              ))
+            }
+          </select>
+
+          <button id="resetBtn" class="btn btn-secondary">Reset Filters</button>
+        </div>
+      </div>
+
+      <!-- Results counter -->
+      <p id="resultsCounter" style="color: #b0b0b8; margin-bottom: 1rem;">
+        Showing {sponsorships.length} sponsorships
+      </p>
+    </div>
+
+    <!-- Sponsorships Table -->
+    <div style="overflow-x: auto;">
+      <table id="sponsorshipsTable">
+        <thead>
+          <tr>
+            <th>Logo</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Compensation</th>
+          </tr>
+        </thead>
+        <tbody id="sponsorshipsBody">
+          {
+            sorted.map((sponsor) => (
+              <tr data-name={sponsor.data.name} data-category={sponsor.data.category} data-type={sponsor.data.type}>
+                <td>
+                  {sponsor.data.logo ? (
+                    <img
+                      src={sponsor.data.logo}
+                      alt={sponsor.data.name}
+                      style="max-height: 40px; object-fit: contain;"
+                    />
+                  ) : (
+                    <span style="color: #666;">No logo</span>
+                  )}
+                </td>
+                <td>
+                  <a href={`/resources/sponsorships/${sponsor.slug}/`} style="color: #a855f7; font-weight: 500;">
+                    {sponsor.data.name}
+                  </a>
+                </td>
+                <td>{sponsor.data.category}</td>
+                <td>
+                  <span class="badge" style="text-transform: capitalize;">
+                    {sponsor.data.type}
+                  </span>
+                </td>
+                <td>{sponsor.data.compensation || '—'}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <!-- No results message -->
+    <div
+      id="noResults"
+      style="display: none; text-align: center; padding: 2rem; background-color: var(--bg-secondary); border-radius: 0.75rem;"
+    >
+      <h3>No sponsorships found</h3>
+      <p>Try adjusting your filters or search term</p>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    var searchInput = document.getElementById('searchInput');
+    var categoryFilter = document.getElementById('categoryFilter');
+    var typeFilter = document.getElementById('typeFilter');
+    var resetBtn = document.getElementById('resetBtn');
+    var sponsorshipsBody = document.getElementById('sponsorshipsBody');
+    var noResults = document.getElementById('noResults');
+    var resultsCounter = document.getElementById('resultsCounter');
+
+    function filterSponsors() {
+      var searchTerm = searchInput.value.toLowerCase();
+      var selectedCategory = categoryFilter.value;
+      var selectedType = typeFilter.value;
+
+      var visibleCount = 0;
+      var rows = sponsorshipsBody.querySelectorAll('tr');
+
+      rows.forEach(function(row) {
+        var name = (row.getAttribute('data-name') || '').toLowerCase();
+        var category = row.getAttribute('data-category') || '';
+        var type = row.getAttribute('data-type') || '';
+
+        var matchesSearch = name.indexOf(searchTerm) !== -1;
+        var matchesCategory = !selectedCategory || category === selectedCategory;
+        var matchesType = !selectedType || type === selectedType;
+
+        if (matchesSearch && matchesCategory && matchesType) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      resultsCounter.textContent = 'Showing ' + visibleCount + ' of ' + rows.length + ' sponsorships';
+    }
+
+    function resetFilters() {
+      searchInput.value = '';
+      categoryFilter.value = '';
+      typeFilter.value = '';
+      filterSponsors();
+    }
+
+    searchInput.addEventListener('input', filterSponsors);
+    categoryFilter.addEventListener('change', filterSponsors);
+    typeFilter.addEventListener('change', filterSponsors);
+    resetBtn.addEventListener('click', resetFilters);
+  });
+</script>
+</BaseLayout>
