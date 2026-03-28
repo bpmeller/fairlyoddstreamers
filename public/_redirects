@@ -1,0 +1,9 @@
+# Redirects from old Webflow URLs to new Astro URLs
+# Format: old-path new-path status-code
+
+/resources/overlays /resources/graphics 301
+/resources/overlays/ /resources/graphics/ 301
+/how-to-stream-on-twitch /blog/ 301
+/how-to-stream-on-twitch/ /blog/ 301
+/about-us-old /about 301
+/style-guide / 301
