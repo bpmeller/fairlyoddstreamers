@@ -29,7 +29,7 @@ const { Content } = await sponsor.render();
       <span style="color: #b0b0b8;">{sponsor.data.name}</span>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;" class="sponsor-detail-grid">
       <!-- Left Column: Logo and Key Info -->
       <div>
         {
@@ -147,6 +147,14 @@ const { Content } = await sponsor.render();
     </div>
   </div>
 </div>
+
+<style>
+  @media (max-width: 768px) {
+    .sponsor-detail-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
 
 <!-- Schema Markup -->
 <script type="application/ld+json">

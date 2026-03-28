@@ -72,6 +72,11 @@ const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : new 
         <a href="/" class="nav-brand">
           <img src="/images/FOS-LOGO.png" alt="Fairly Odd Streamers" style="height: 36px; width: auto;" />
         </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
           <li class="nav-dropdown">
@@ -143,5 +148,16 @@ const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : new 
         </div>
       </div>
     </footer>
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.querySelector('.nav-toggle');
+        var links = document.querySelector('.nav-links');
+        if (toggle && links) {
+          toggle.addEventListener('click', function() {
+            links.classList.toggle('active');
+          });
+        }
+      });
+    </script>
   </body>
 </html>
