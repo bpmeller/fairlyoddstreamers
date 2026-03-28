@@ -23,23 +23,23 @@ const { Content } = await post.render();
 <div class="section-narrow">
   <div class="container">
     <!-- Breadcrumb -->
-    <div style="margin-bottom: 2rem; font-size: 0.875rem; position: relative; z-index: 1;">
-      <a href="/blog/" style="color: #a855f7;">Blog</a>
-      <span style="color: #666; margin: 0 0.5rem;">/</span>
-      <span style="color: #b0b0b8;">{post.data.name}</span>
+    <div class="breadcrumb">
+      <a href="/blog/">Blog</a>
+      <span class="separator">/</span>
+      <span class="current">{post.data.name}</span>
     </div>
 
     <!-- Article Container -->
-    <article style="max-width: 700px; margin: 0 auto;">
+    <article class="article-container">
       <!-- Header -->
-      <h1 style="margin-bottom: 1rem;">{post.data.name}</h1>
+      <h1>{post.data.name}</h1>
 
       <!-- Meta Info -->
-      <div style="display: flex; gap: 2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); flex-wrap: wrap; color: #b0b0b8; font-size: 0.9rem;">
+      <div class="article-meta">
         {
           post.data.author && (
             <div>
-              <strong style="color: #ffffff;">By</strong> {post.data.author}
+              <strong>By</strong> {post.data.author}
             </div>
           )
         }
@@ -70,25 +70,22 @@ const { Content } = await post.render();
           <img
             src={post.data.coverImage}
             alt={post.data.name}
-            style="width: 100%; border-radius: 0.75rem; margin-bottom: 2rem; max-height: 400px; object-fit: cover;"
+            class="article-cover"
           />
         )
       }
 
       <!-- Content -->
-      <div
-        style="color: #b0b0b8; line-height: 1.8; font-size: 1.05rem;"
-        class="prose"
-      >
+      <div class="article-content prose">
         <Content />
       </div>
 
       <!-- End of Article -->
-      <hr style="margin: 3rem 0; border: none; border-top: 1px solid var(--border-color);" />
+      <hr class="article-divider" />
 
       <!-- Back Link -->
-      <div style="margin-top: 2rem;">
-        <a href="/blog/" class="btn btn-secondary">← Back to Blog</a>
+      <div class="back-link">
+        <a href="/blog/" class="btn btn-secondary">&larr; Back to Blog</a>
       </div>
     </article>
   </div>

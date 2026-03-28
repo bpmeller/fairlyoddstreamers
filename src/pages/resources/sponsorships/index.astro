@@ -18,59 +18,50 @@ const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name
 
 <div class="section-narrow">
   <div class="container">
-    <div style="margin-bottom: 2rem;">
-      <h1>100+ Sponsorships for Streamers</h1>
-      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 2rem;">
-        Discover brand partnerships and affiliate programs tailored for content creators. Filter by category, type, and
-        compensation.
-      </p>
+    <h1>100+ Sponsorships for Streamers</h1>
+    <p class="page-subtitle">
+      Discover brand partnerships and affiliate programs tailored for content creators. Filter by category, type, and
+      compensation.
+    </p>
 
-      <!-- Search and Filter Controls -->
-      <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem;">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search sponsorships by name..."
-          style="padding: 0.75rem 1rem; font-size: 1rem;"
-        />
+    <!-- Search and Filter Controls -->
+    <div class="filter-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search sponsorships by name..."
+      />
 
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <select
-            id="categoryFilter"
-            style="flex: 1; min-width: 200px; padding: 0.75rem 1rem;"
-          >
-            <option value="">All Categories</option>
-            {
-              categories.map((cat) => (
-                <option value={cat}>{cat}</option>
-              ))
-            }
-          </select>
+      <div class="filter-row">
+        <select id="categoryFilter">
+          <option value="">All Categories</option>
+          {
+            categories.map((cat) => (
+              <option value={cat}>{cat}</option>
+            ))
+          }
+        </select>
 
-          <select
-            id="typeFilter"
-            style="flex: 1; min-width: 200px; padding: 0.75rem 1rem;"
-          >
-            <option value="">All Types</option>
-            {
-              types.map((type) => (
-                <option value={type}>{type}</option>
-              ))
-            }
-          </select>
+        <select id="typeFilter">
+          <option value="">All Types</option>
+          {
+            types.map((type) => (
+              <option value={type}>{type}</option>
+            ))
+          }
+        </select>
 
-          <button id="resetBtn" class="btn btn-secondary">Reset Filters</button>
-        </div>
+        <button id="resetBtn" class="btn btn-secondary">Reset Filters</button>
       </div>
-
-      <!-- Results counter -->
-      <p id="resultsCounter" style="color: #b0b0b8; margin-bottom: 1rem;">
-        Showing {sponsorships.length} sponsorships
-      </p>
     </div>
 
+    <!-- Results counter -->
+    <p id="resultsCounter" class="results-counter">
+      Showing {sponsorships.length} sponsorships
+    </p>
+
     <!-- Sponsorships Table -->
-    <div style="overflow-x: auto;">
+    <div class="table-wrap">
       <table id="sponsorshipsTable">
         <thead>
           <tr>
@@ -90,14 +81,14 @@ const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name
                     <img
                       src={sponsor.data.logo}
                       alt={sponsor.data.name}
-                      style="max-height: 40px; object-fit: contain;"
+                      class="table-logo"
                     />
                   ) : (
-                    <span style="color: #666;">No logo</span>
+                    <span class="text-muted">No logo</span>
                   )}
                 </td>
                 <td>
-                  <a href={`/resources/sponsorships/${sponsor.slug}/`} style="color: #a855f7; font-weight: 500;">
+                  <a href={`/resources/sponsorships/${sponsor.slug}/`} class="text-accent">
                     {sponsor.data.name}
                   </a>
                 </td>
@@ -116,21 +107,18 @@ const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name
     </div>
 
     <!-- No results message -->
-    <div
-      id="noResults"
-      style="display: none; text-align: center; padding: 2rem; background-color: var(--bg-secondary); border-radius: 0.75rem;"
-    >
+    <div id="noResults" class="no-results">
       <h3>No sponsorships found</h3>
       <p>Try adjusting your filters or search term</p>
     </div>
 
     <!-- Newsletter Signup -->
-    <div style="max-width: 600px; margin: 3rem auto 0; text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(236,72,153,0.15)); border: 1px solid rgba(168,85,247,0.3); border-radius: 1rem;">
-      <h2 style="margin-bottom: 0.5rem;">Stay in the Loop</h2>
-      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 1.5rem;">
+    <div class="newsletter-box">
+      <h2>Stay in the Loop</h2>
+      <p class="page-subtitle">
         Get the latest sponsorship opportunities, tools, and streamer tips delivered to your inbox.
       </p>
-      <form action="https://formsubmit.co/brian@fairlyoddstreamers.com" method="POST" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+      <form action="https://formsubmit.co/brian@fairlyoddstreamers.com" method="POST" class="newsletter-form">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New FOS Newsletter Signup">
@@ -140,13 +128,12 @@ const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name
           name="email"
           placeholder="your@email.com"
           required
-          style="padding: 0.75rem 1rem; min-width: 280px; font-size: 1rem;"
         />
-        <button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+        <button type="submit" class="btn btn-primary">
           Subscribe
         </button>
       </form>
-      <p style="font-size: 0.8rem; color: #666; margin-top: 1rem; margin-bottom: 0;">No spam, unsubscribe anytime.</p>
+      <p class="newsletter-disclaimer">No spam, unsubscribe anytime.</p>
     </div>
   </div>
 </div>
@@ -203,4 +190,99 @@ const sorted = sponsorships.sort((a, b) => a.data.name.localeCompare(b.data.name
     resetBtn.addEventListener('click', resetFilters);
   });
 </script>
+
+<style>
+  .page-subtitle {
+    font-size: 1.1rem;
+    color: #b0b0b8;
+    margin-bottom: 2rem;
+  }
+  .filter-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .filter-bar input,
+  .filter-bar select {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+  .filter-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .filter-row select {
+    flex: 1;
+    min-width: 200px;
+  }
+  .results-counter {
+    color: #b0b0b8;
+    margin-bottom: 1rem;
+  }
+  .table-wrap {
+    overflow-x: auto;
+  }
+  .table-logo {
+    max-height: 40px;
+    object-fit: contain;
+  }
+  .text-muted {
+    color: #666;
+  }
+  .text-accent {
+    color: #a855f7;
+    font-weight: 500;
+  }
+  .no-results {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--bg-secondary);
+    border-radius: 0.75rem;
+  }
+  .newsletter-box {
+    max-width: 600px;
+    margin: 3rem auto 0;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(236,72,153,0.15));
+    border: 1px solid rgba(168,85,247,0.3);
+    border-radius: 1rem;
+  }
+  .newsletter-box h2 {
+    margin-bottom: 0.5rem;
+  }
+  .newsletter-form {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .newsletter-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    min-width: 280px;
+    font-size: 1rem;
+  }
+  .newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  .newsletter-disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: white;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+</style>
 </BaseLayout>

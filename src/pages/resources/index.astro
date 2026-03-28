@@ -55,17 +55,17 @@ const resources = [
   <div class="section-narrow">
     <div class="container">
       <h1>Streaming Resources</h1>
-      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 2.5rem;">
+      <p class="page-subtitle">
         Everything you need to grow and monetize your livestream, all in one place.
       </p>
 
       <div class="resource-grid">
         {resources.map((r) => (
           <a href={r.href} class="card resource-card-link">
-            <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">{r.icon}</div>
-            <h3 style="margin-bottom: 0.5rem;">{r.title}</h3>
-            {r.count && <span class="badge" style="margin-bottom: 0.5rem;">{r.count}</span>}
-            <p style="color: #b0b0b8; font-size: 0.95rem;">{r.description}</p>
+            <div class="category-icon">{r.icon}</div>
+            <h3 class="card-title">{r.title}</h3>
+            {r.count && <span class="badge">{r.count}</span>}
+            <p>{r.description}</p>
           </a>
         ))}
       </div>
@@ -74,6 +74,11 @@ const resources = [
 </BaseLayout>
 
 <style>
+  .page-subtitle {
+    font-size: 1.1rem;
+    color: #b0b0b8;
+    margin-bottom: 2.5rem;
+  }
   .resource-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -88,6 +93,13 @@ const resources = [
   .resource-card-link:hover {
     transform: translateY(-4px);
     border-color: #a855f7;
+  }
+  .category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .card-title {
+    margin-bottom: 0.5rem;
   }
   .badge {
     display: inline-block;

@@ -87,15 +87,15 @@ const categories = [
 
 <div class="section">
   <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem;">Resource Categories</h2>
+    <h2 class="section-heading">Resource Categories</h2>
     <div class="grid grid-3">
       {
         categories.map((cat) => (
-          <a href={`/resources/${cat.slug}/`} class="card" style="text-decoration: none;">
-            <div style="font-size: 2.5rem; margin-bottom: 1rem;">{cat.icon}</div>
-            <h3 style="margin-bottom: 0.5rem; color: #ffffff;">{cat.name}</h3>
+          <a href={`/resources/${cat.slug}/`} class="card card-link">
+            <div class="category-icon">{cat.icon}</div>
+            <h3 class="card-title">{cat.name}</h3>
             <p>{cat.description}</p>
-            <p style="margin-top: 1rem; color: #a855f7; font-weight: 600;">{cat.count} Resources →</p>
+            <p class="text-accent mt-2">{cat.count} Resources →</p>
           </a>
         ))
       }
@@ -105,12 +105,12 @@ const categories = [
 
 {
   featuredSponsors.length > 0 && (
-    <div class="section" style="background-color: var(--bg-secondary);">
+    <div class="section section-alt">
       <div class="container">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Featured Sponsorships</h2>
+        <h2 class="section-heading">Featured Sponsorships</h2>
         <div class="grid grid-3">
           {featuredSponsors.map((sponsor) => (
-            <a href={`/resources/sponsorships/${sponsor.slug}/`} class="card" style="text-decoration: none;">
+            <a href={`/resources/sponsorships/${sponsor.slug}/`} class="card card-link">
               {sponsor.data.logo && (
                 <img
                   src={sponsor.data.logo}
@@ -118,15 +118,15 @@ const categories = [
                   style="max-height: 80px; object-fit: contain; margin-bottom: 1rem;"
                 />
               )}
-              <h3 style="color: #ffffff; margin-bottom: 0.5rem;">{sponsor.data.name}</h3>
+              <h3 class="card-title">{sponsor.data.name}</h3>
               <p class="line-clamp-2">{sponsor.data.category}</p>
               {sponsor.data.compensation && (
-                <p style="color: #a855f7; font-weight: 600; margin-top: 1rem;">{sponsor.data.compensation}</p>
+                <p class="text-accent mt-2">{sponsor.data.compensation}</p>
               )}
             </a>
           ))}
         </div>
-        <div style="text-align: center; margin-top: 2rem;">
+        <div class="cta-center">
           <a href="/resources/sponsorships/" class="btn btn-primary">
             View All Sponsorships
           </a>
@@ -140,22 +140,22 @@ const categories = [
   recentBlog.length > 0 && (
     <div class="section">
       <div class="container">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Latest Blog Posts</h2>
+        <h2 class="section-heading">Latest Blog Posts</h2>
         <div class="grid grid-2">
           {recentBlog.map((post) => (
-            <a href={`/blog/${post.slug}/`} class="card" style="text-decoration: none;">
+            <a href={`/blog/${post.slug}/`} class="card card-link">
               {post.data.coverImage && (
                 <img
                   src={post.data.coverImage}
                   alt={post.data.name}
-                  style="width: 100%; height: 200px; object-fit: cover; margin: -1rem -1rem 1rem -1rem; border-radius: 0.75rem 0.75rem 0 0;"
+                  class="card-img"
                 />
               )}
-              <h3 style="color: #ffffff; margin-bottom: 0.5rem;">{post.data.name}</h3>
+              <h3 class="card-title">{post.data.name}</h3>
               <p class="line-clamp-2">{post.data.postSummary || ''}</p>
-              <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
-                {post.data.author && <span style="color: #a855f7;">{post.data.author}</span>}
-                {post.data.readTime && <span style="color: #b0b0b8; font-size: 0.875rem;">{post.data.readTime}</span>}
+              <div class="card-meta">
+                {post.data.author && <span class="text-accent">{post.data.author}</span>}
+                {post.data.readTime && <span>{post.data.readTime}</span>}
               </div>
             </a>
           ))}
@@ -167,30 +167,30 @@ const categories = [
 
 {
   recentInterviews.length > 0 && (
-    <div class="section" style="background-color: var(--bg-secondary);">
+    <div class="section section-alt">
       <div class="container">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Recent Interviews</h2>
+        <h2 class="section-heading">Recent Interviews</h2>
         <div class="grid grid-2">
           {recentInterviews.map((interview) => (
-            <a href={`/interviews/${interview.slug}/`} class="card" style="text-decoration: none;">
+            <a href={`/interviews/${interview.slug}/`} class="card card-link">
               {interview.data.coverPhoto && (
                 <img
                   src={interview.data.coverPhoto}
                   alt={interview.data.name}
-                  style="width: 100%; height: 250px; object-fit: cover; margin: -1rem -1rem 1rem -1rem; border-radius: 0.75rem 0.75rem 0 0;"
+                  class="card-img card-img-tall"
                 />
               )}
-              <h3 style="color: #ffffff; margin-bottom: 0.5rem;">{interview.data.name}</h3>
+              <h3 class="card-title">{interview.data.name}</h3>
               <p class="line-clamp-2">{interview.data.title || interview.data.category}</p>
-              <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <div class="badge-row">
                 {interview.data.twitch && (
-                  <span class="badge badge-secondary" style="font-size: 0.7rem;">Twitch</span>
+                  <span class="badge badge-secondary badge-sm">Twitch</span>
                 )}
                 {interview.data.twitter && (
-                  <span class="badge badge-secondary" style="font-size: 0.7rem;">Twitter</span>
+                  <span class="badge badge-secondary badge-sm">Twitter</span>
                 )}
                 {interview.data.youtube && (
-                  <span class="badge badge-secondary" style="font-size: 0.7rem;">YouTube</span>
+                  <span class="badge badge-secondary badge-sm">YouTube</span>
                 )}
               </div>
             </a>
@@ -204,12 +204,12 @@ const categories = [
 <!-- Newsletter Signup -->
 <div class="section">
   <div class="container">
-    <div style="max-width: 600px; margin: 0 auto; text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(236,72,153,0.15)); border: 1px solid rgba(168,85,247,0.3); border-radius: 1rem;">
-      <h2 style="margin-bottom: 0.5rem;">Stay in the Loop</h2>
-      <p style="font-size: 1.1rem; color: #b0b0b8; margin-bottom: 1.5rem;">
+    <div class="newsletter-box">
+      <h2>Stay in the Loop</h2>
+      <p class="page-subtitle">
         Get the latest sponsorship opportunities, tools, and streamer tips delivered to your inbox.
       </p>
-      <form action="https://formsubmit.co/brian@fairlyoddstreamers.com" method="POST" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+      <form action="https://formsubmit.co/brian@fairlyoddstreamers.com" method="POST" class="newsletter-form">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New FOS Newsletter Signup">
@@ -219,13 +219,12 @@ const categories = [
           name="email"
           placeholder="your@email.com"
           required
-          style="padding: 0.75rem 1rem; min-width: 280px; font-size: 1rem;"
         />
-        <button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 1rem;">
+        <button type="submit" class="btn btn-primary">
           Subscribe
         </button>
       </form>
-      <p style="font-size: 0.8rem; color: #666; margin-top: 1rem; margin-bottom: 0;">No spam, unsubscribe anytime.</p>
+      <p class="newsletter-disclaimer">No spam, unsubscribe anytime.</p>
     </div>
   </div>
 </div>

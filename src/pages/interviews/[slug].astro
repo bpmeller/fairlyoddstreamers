@@ -23,13 +23,13 @@ const { Content } = await interview.render();
 <div class="section-narrow">
   <div class="container">
     <!-- Breadcrumb -->
-    <div style="margin-bottom: 2rem; font-size: 0.875rem; position: relative; z-index: 1;">
-      <a href="/interviews/" style="color: #a855f7;">Interviews</a>
-      <span style="color: #666; margin: 0 0.5rem;">/</span>
-      <span style="color: #b0b0b8;">{interview.data.name}</span>
+    <div class="breadcrumb">
+      <a href="/interviews/">Interviews</a>
+      <span class="separator">/</span>
+      <span class="current">{interview.data.name}</span>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+    <div class="detail-grid">
       <!-- Left Column: Image and Social -->
       <div>
         {
@@ -37,50 +37,49 @@ const { Content } = await interview.render();
             <img
               src={interview.data.coverPhoto}
               alt={interview.data.name}
-              style="width: 100%; border-radius: 0.75rem; margin-bottom: 2rem;"
             />
           )
         }
 
-        <h1 style="margin-bottom: 0.5rem;">{interview.data.name}</h1>
-        {interview.data.title && <p style="color: #a855f7; font-weight: 600; margin-bottom: 1.5rem;">{interview.data.title}</p>}
+        <h1>{interview.data.name}</h1>
+        {interview.data.title && <p class="text-accent">{interview.data.title}</p>}
 
         <!-- Social Links -->
         <div class="card">
-          <h3 style="margin-bottom: 1rem;">Connect</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <h3>Connect</h3>
+          <div class="social-links">
             {
               interview.data.twitch && (
                 <a href={interview.data.twitch} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                  → Twitch
+                  &rarr; Twitch
                 </a>
               )
             }
             {
               interview.data.twitter && (
                 <a href={interview.data.twitter} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                  → Twitter
+                  &rarr; Twitter
                 </a>
               )
             }
             {
               interview.data.youtube && (
                 <a href={interview.data.youtube} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                  → YouTube
+                  &rarr; YouTube
                 </a>
               )
             }
             {
               interview.data.instagram && (
                 <a href={interview.data.instagram} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                  → Instagram
+                  &rarr; Instagram
                 </a>
               )
             }
             {
               interview.data.discord && (
                 <a href={interview.data.discord} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                  → Discord
+                  &rarr; Discord
                 </a>
               )
             }
@@ -89,17 +88,17 @@ const { Content } = await interview.render();
           <!-- Stats -->
           {
             (interview.data.followers || interview.data.views) && (
-              <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+              <div class="stats-section">
                 {interview.data.followers && (
-                  <div style="margin-bottom: 0.5rem;">
-                    <span style="color: #b0b0b8;">Followers:</span>
-                    <span style="color: #ffffff; font-weight: 600;"> {interview.data.followers}</span>
+                  <div class="stat-row">
+                    <span class="stat-label">Followers:</span>
+                    <span class="stat-value"> {interview.data.followers}</span>
                   </div>
                 )}
                 {interview.data.views && (
-                  <div>
-                    <span style="color: #b0b0b8;">Views:</span>
-                    <span style="color: #ffffff; font-weight: 600;"> {interview.data.views}</span>
+                  <div class="stat-row">
+                    <span class="stat-label">Views:</span>
+                    <span class="stat-value"> {interview.data.views}</span>
                   </div>
                 )}
               </div>
@@ -110,15 +109,15 @@ const { Content } = await interview.render();
 
       <!-- Right Column: Interview Content -->
       <div>
-        <article style="color: #b0b0b8; line-height: 1.8;">
+        <article class="article-content">
           <Content />
         </article>
       </div>
     </div>
 
     <!-- Back Link -->
-    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
-      <a href="/interviews/" class="btn btn-secondary">← Back to Interviews</a>
+    <div class="back-link-section">
+      <a href="/interviews/" class="btn btn-secondary">&larr; Back to Interviews</a>
     </div>
   </div>
 </div>
@@ -136,40 +135,40 @@ const { Content } = await interview.render();
 </script>
 
 <style>
-  article :global(h2) {
+  .article-content :global(h2) {
     color: #ffffff;
     font-size: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  article :global(h3) {
+  .article-content :global(h3) {
     color: #ffffff;
     font-size: 1.25rem;
     margin-top: 1.25rem;
     margin-bottom: 0.75rem;
   }
 
-  article :global(p) {
+  .article-content :global(p) {
     margin-bottom: 1rem;
   }
 
-  article :global(ul),
-  article :global(ol) {
+  .article-content :global(ul),
+  .article-content :global(ol) {
     margin-left: 2rem;
     margin-bottom: 1rem;
   }
 
-  article :global(li) {
+  .article-content :global(li) {
     margin-bottom: 0.5rem;
   }
 
-  article :global(a) {
+  .article-content :global(a) {
     color: #a855f7;
     text-decoration: underline;
   }
 
-  article :global(blockquote) {
+  .article-content :global(blockquote) {
     border-left: 4px solid #a855f7;
     padding-left: 1rem;
     margin: 1.5rem 0;

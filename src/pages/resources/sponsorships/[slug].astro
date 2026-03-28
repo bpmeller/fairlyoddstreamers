@@ -23,13 +23,13 @@ const { Content } = await sponsor.render();
 <div class="section-narrow">
   <div class="container">
     <!-- Breadcrumb -->
-    <div style="margin-bottom: 2rem; font-size: 0.875rem; position: relative; z-index: 1;">
-      <a href="/resources/sponsorships/" style="color: #a855f7;">Sponsorships</a>
-      <span style="color: #666; margin: 0 0.5rem;">/</span>
-      <span style="color: #b0b0b8;">{sponsor.data.name}</span>
+    <div class="breadcrumb">
+      <a href="/resources/sponsorships/">Sponsorships</a>
+      <span class="separator">/</span>
+      <span class="current">{sponsor.data.name}</span>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;" class="sponsor-detail-grid">
+    <div class="detail-grid sponsor-detail-grid">
       <!-- Left Column: Logo and Key Info -->
       <div>
         {
@@ -37,32 +37,28 @@ const { Content } = await sponsor.render();
             <img
               src={sponsor.data.logo}
               alt={sponsor.data.name}
-              style="width: 100%; max-width: 300px; margin-bottom: 2rem; border-radius: 0.75rem;"
+              class="sponsor-logo"
             />
           )
         }
 
-        <h1 style="margin-bottom: 1.5rem;">{sponsor.data.name}</h1>
+        <h1>{sponsor.data.name}</h1>
 
         <!-- Key Details -->
-        <div class="card" style="margin-bottom: 2rem;">
+        <div class="card">
           <div class="card-body">
             {
               sponsor.data.category && (
-                <div style="margin-bottom: 1rem;">
-                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
-                    Category
-                  </label>
-                  <span style="color: #ffffff;">{sponsor.data.category}</span>
+                <div class="detail-item">
+                  <label class="detail-label">Category</label>
+                  <span class="detail-value">{sponsor.data.category}</span>
                 </div>
               )
             }
             {
               sponsor.data.type && (
-                <div style="margin-bottom: 1rem;">
-                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
-                    Type
-                  </label>
+                <div class="detail-item">
+                  <label class="detail-label">Type</label>
                   <span class="badge" style="text-transform: capitalize;">
                     {sponsor.data.type}
                   </span>
@@ -71,28 +67,24 @@ const { Content } = await sponsor.render();
             }
             {
               sponsor.data.compensation && (
-                <div style="margin-bottom: 1rem;">
-                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
-                    Compensation
-                  </label>
-                  <span style="color: #a855f7; font-weight: 600;">{sponsor.data.compensation}</span>
+                <div class="detail-item">
+                  <label class="detail-label">Compensation</label>
+                  <span class="text-accent">{sponsor.data.compensation}</span>
                 </div>
               )
             }
             {
               sponsor.data.sponsorshipType && (
-                <div style="margin-bottom: 1rem;">
-                  <label style="display: block; color: #b0b0b8; font-weight: 600; margin-bottom: 0.25rem;">
-                    Sponsorship Type
-                  </label>
-                  <span style="color: #ffffff;">{sponsor.data.sponsorshipType}</span>
+                <div class="detail-item">
+                  <label class="detail-label">Sponsorship Type</label>
+                  <span class="detail-value">{sponsor.data.sponsorshipType}</span>
                 </div>
               )
             }
           </div>
 
           <!-- Action Buttons -->
-          <div class="card-footer" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <div class="card-footer">
             {
               sponsor.data.applicationLink && (
                 <a href={sponsor.data.applicationLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
@@ -115,8 +107,8 @@ const { Content } = await sponsor.render();
       <div>
         <div class="card">
           <div class="card-body">
-            <h2 style="margin-bottom: 1.5rem;">Overview</h2>
-            <div style="color: #b0b0b8; line-height: 1.8;">
+            <h2>Overview</h2>
+            <div class="article-content">
               <Content />
             </div>
           </div>
@@ -125,9 +117,9 @@ const { Content } = await sponsor.render();
         <!-- FOS Affiliate Info -->
         {
           sponsor.data.fosAffiliate === 'Yes' && (
-            <div class="card" style="margin-top: 2rem; background-color: rgba(168, 85, 247, 0.1); border: 1px solid var(--accent-purple);">
+            <div class="card affiliate-card">
               <div class="card-body">
-                <h3 style="color: #a855f7; margin-bottom: 1rem;">FOS Affiliate Program</h3>
+                <h3 class="text-accent">FOS Affiliate Program</h3>
                 <p>This sponsorship is part of our affiliate network.</p>
                 {sponsor.data.fosAffiliateLink && (
                   <a href={sponsor.data.fosAffiliateLink} class="btn btn-primary" style="margin-top: 1rem;">
@@ -142,16 +134,100 @@ const { Content } = await sponsor.render();
     </div>
 
     <!-- Back Link -->
-    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+    <div class="back-link-section">
       <a href="/resources/sponsorships/" class="btn btn-secondary">← Back to All Sponsorships</a>
     </div>
   </div>
 </div>
 
 <style>
+  .breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    position: relative;
+    z-index: 1;
+  }
+  .breadcrumb a {
+    color: #a855f7;
+  }
+  .breadcrumb .separator {
+    color: #666;
+    margin: 0 0.5rem;
+  }
+  .breadcrumb .current {
+    color: #b0b0b8;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sponsor-logo {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+  }
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+  .card {
+    margin-bottom: 2rem;
+  }
+  .detail-item {
+    margin-bottom: 1rem;
+  }
+  .detail-label {
+    display: block;
+    color: #b0b0b8;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .detail-value {
+    color: #ffffff;
+  }
+  .text-accent {
+    color: #a855f7;
+    font-weight: 600;
+  }
+  .card-footer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  .article-content {
+    color: #b0b0b8;
+    line-height: 1.8;
+  }
+  .affiliate-card {
+    margin-top: 2rem;
+    background-color: rgba(168, 85, 247, 0.1);
+    border: 1px solid var(--accent-purple);
+  }
+  .affiliate-card h3 {
+    margin-bottom: 1rem;
+  }
+  .back-link-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+  }
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: white;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
   @media (max-width: 768px) {
-    .sponsor-detail-grid {
-      grid-template-columns: 1fr !important;
+    .detail-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
