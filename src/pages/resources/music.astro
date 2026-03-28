@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const music = await getCollection('music');
-const sorted = music.sort((a, b) => (b.data.rank || 0) - (a.data.rank || 0) || a.data.name.localeCompare(b.data.name));
+const sorted = music.sort((a, b) => (a.data.rank || 999) - (b.data.rank || 999) || a.data.name.localeCompare(b.data.name));
 ---
 
 <BaseLayout

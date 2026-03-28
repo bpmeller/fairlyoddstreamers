@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const analytics = await getCollection('analytics');
-const sorted = analytics.sort((a, b) => (b.data.rank || 0) - (a.data.rank || 0) || a.data.name.localeCompare(b.data.name));
+const sorted = analytics.sort((a, b) => (a.data.rank || 999) - (b.data.rank || 999) || a.data.name.localeCompare(b.data.name));
 ---
 
 <BaseLayout

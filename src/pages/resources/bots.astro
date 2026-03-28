@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const bots = await getCollection('bots');
-const sorted = bots.sort((a, b) => (b.data.rank || 0) - (a.data.rank || 0) || a.data.name.localeCompare(b.data.name));
+const sorted = bots.sort((a, b) => (a.data.rank || 999) - (b.data.rank || 999) || a.data.name.localeCompare(b.data.name));
 ---
 
 <BaseLayout
@@ -33,9 +33,6 @@ const sorted = bots.sort((a, b) => (b.data.rank || 0) - (a.data.rank || 0) || a.
               <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
                 {bot.data.cost && (
                   <span style="display: inline-block; background: #0f766e; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">{bot.data.cost}</span>
-                )}
-                {bot.data.platforms && (
-                  <span style="display: inline-block; background: #1e40af; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">{bot.data.platforms}</span>
                 )}
               </div>
 
