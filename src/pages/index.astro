@@ -23,51 +23,83 @@ const categories = [
   {
     name: 'Sponsorships',
     slug: 'sponsorships',
-    description: '100+ sponsorship opportunities for streamers',
-    count: sponsorships.length,
-    icon: '💰',
+    description: 'Browse 100+ brands offering sponsorships or affiliate opportunities.',
+    image: '/images/RESOURCE-sponsorships.png',
   },
   {
     name: 'Analytics',
     slug: 'analytics',
-    description: 'Track and analyze your stream performance',
-    count: (await getCollection('analytics')).length,
-    icon: '📊',
+    description: 'Track and analyze your stream performance.',
+    image: '/images/RESOURCE-analytics.png',
   },
   {
     name: 'Bots',
     slug: 'bots',
-    description: 'Chat moderation and engagement tools',
-    count: (await getCollection('bots')).length,
-    icon: '🤖',
+    description: 'Chat moderation and engagement tools.',
+    image: '/images/RESOURCE-bots.png',
   },
   {
     name: 'Music',
     slug: 'music',
-    description: 'Free music for your streams',
-    count: (await getCollection('music')).length,
-    icon: '🎵',
+    description: "Stream-safe music without DMCA worries.",
+    image: '/images/RESOURCE-music.png',
   },
   {
     name: 'Graphics',
     slug: 'graphics',
-    description: 'Overlays and graphic design tools',
-    count: (await getCollection('graphics')).length,
-    icon: '🎨',
+    description: 'Overlays, alerts, and graphic design tools.',
+    image: '/images/RESOURCE-graphics.png',
   },
   {
     name: 'Broadcast Tools',
     slug: 'stream-software',
-    description: 'Software for broadcasting',
-    count: (await getCollection('broadcast-tools')).length,
-    icon: '📹',
+    description: 'The best software for going live.',
+    image: '/images/RESOURCE-software.png',
   },
   {
     name: 'Streaming Tools',
     slug: 'twitch-tools',
-    description: 'Platform-specific tools and extensions',
-    count: (await getCollection('streaming-tools')).length,
-    icon: '⚙️',
+    description: 'Platform-specific tools and extensions.',
+    image: '/images/RESOURCE-tools.png',
+  },
+];
+
+const testimonials = [
+  {
+    text: "I was interviewed by @fairlyoddstream and they were amazing to work with :D Please go read our interview.",
+    name: "Kayk",
+    handle: "Kaykrisify",
+    role: "Twitch Partner",
+  },
+  {
+    text: "Saw this on TikTok and ya'll deserve to know. This website has everything you might need in terms of streamer resources. It's a blessing for new streamers.",
+    name: "Kain",
+    handle: "vtuber",
+    role: "",
+  },
+  {
+    text: "Fairly Odd Streamers has a big list of sponsors known to sponsor streamers, and is another great resource :)",
+    name: "Kati",
+    handle: "Katliente",
+    role: "Twitch Partner",
+  },
+  {
+    text: "Thank you for this cool opportunity to do an interview! @fairlyoddstream is a wonderful resource for all streamers alike from the basics to sponsorships!",
+    name: "Mini",
+    handle: "MinishKat",
+    role: "Twitch & NZXT Partner",
+  },
+  {
+    text: "@fairlyoddstream — the master site for sponsorships and affiliations. Provides access to over 100 different sponsorships with info on the company, requirements, and the link to apply!",
+    name: "Ariq",
+    handle: "Aziouxeen",
+    role: "Twitch Streamer",
+  },
+  {
+    text: "The website of Fairly Odd Streamers is a great resource for applying for some sponsorships!",
+    name: "Cari",
+    handle: "Carlewheezers",
+    role: "Horror & Variety Streamer",
   },
 ];
 ---
@@ -77,37 +109,72 @@ const categories = [
   description="Discover sponsorships, tools, analytics, and resources for livestreamers. Over 100 curated sponsorship opportunities."
 >
 
-<div class="hero section">
+<!-- Hero -->
+<div class="hero-section">
   <div class="container">
-    <h1>Fairly Odd Streamers</h1>
-    <p class="hero-subtitle">Curated resources, sponsorships, and tools to help you succeed at streaming</p>
-    <a href="/resources/sponsorships/" class="btn btn-primary">Explore Sponsorships</a>
-  </div>
-</div>
-
-<div class="section">
-  <div class="container">
-    <h2 class="section-heading">Resource Categories</h2>
-    <div class="grid grid-3">
-      {
-        categories.map((cat) => (
-          <a href={`/resources/${cat.slug}/`} class="card card-link">
-            <div class="category-icon">{cat.icon}</div>
-            <h3 class="card-title">{cat.name}</h3>
-            <p>{cat.description}</p>
-            <p class="text-accent mt-2">{cat.count} Resources →</p>
-          </a>
-        ))
-      }
+    <div class="hero-split">
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          Stop <span class="hero-highlight">Wishing</span><br>
+          Your Way to Stardom
+        </h1>
+        <p class="hero-sub">We're curating the best tools and content to help you become a successful livestreamer.</p>
+        <form class="hero-form" action="https://formsubmit.co/brian@fairlyoddstreamers.com" method="POST">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New FOS Newsletter Signup">
+          <input type="hidden" name="_next" value="https://fairlyoddstreamers.com/?subscribed=true">
+          <input type="email" name="email" placeholder="Email" required />
+          <button type="submit" class="btn btn-gold">Sign Up</button>
+        </form>
+        <p class="hero-disclaimer">Get weekly tips sent straight to your inbox!</p>
+      </div>
+      <div class="hero-image">
+        <img src="/images/FOS-TV-Static.gif" alt="Fairly Odd Streamers TV" />
+      </div>
     </div>
   </div>
 </div>
 
+<!-- Platform Bar -->
+<div class="platform-bar">
+  <p class="platform-bar-text">Applies to all major streaming platforms</p>
+  <div class="platform-logos">
+    <span class="platform-tag">Twitch</span>
+    <span class="platform-tag">YouTube</span>
+    <span class="platform-tag">Facebook Gaming</span>
+    <span class="platform-tag">Kick</span>
+  </div>
+</div>
+
+<!-- Resource Categories -->
+<div class="section">
+  <div class="container">
+    <h2 class="section-heading-display">No Magic Necessary</h2>
+    <p class="section-subheading">All the information you need to grow your channel, in one place.</p>
+    <div class="grid grid-4">
+      {categories.map((cat) => (
+        <a href={`/resources/${cat.slug}/`} class="category-card">
+          <img src={cat.image} alt={cat.name} class="category-card-img" loading="lazy" />
+          <div class="category-card-body">
+            <h3>{cat.name}</h3>
+            <p>{cat.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+    <div class="cta-center" style="margin-top: var(--spacing-2xl);">
+      <a href="/resources/" class="btn btn-outline-green">Take Me To The Resource Center</a>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Sponsorships -->
 {
   featuredSponsors.length > 0 && (
     <div class="section section-alt">
       <div class="container">
-        <h2 class="section-heading">Featured Sponsorships</h2>
+        <h2 class="section-heading-display">Featured Sponsorships</h2>
         <div class="grid grid-3">
           {featuredSponsors.map((sponsor) => (
             <a href={`/resources/sponsorships/${sponsor.slug}/`} class="card card-link">
@@ -116,6 +183,7 @@ const categories = [
                   src={sponsor.data.logo}
                   alt={sponsor.data.name}
                   style="max-height: 80px; object-fit: contain; margin-bottom: 1rem;"
+                  loading="lazy"
                 />
               )}
               <h3 class="card-title">{sponsor.data.name}</h3>
@@ -136,11 +204,12 @@ const categories = [
   )
 }
 
+<!-- Latest Blog Posts -->
 {
   recentBlog.length > 0 && (
     <div class="section">
       <div class="container">
-        <h2 class="section-heading">Latest Blog Posts</h2>
+        <h2 class="section-heading-display">Latest From The Blog</h2>
         <div class="grid grid-2">
           {recentBlog.map((post) => (
             <a href={`/blog/${post.slug}/`} class="card card-link">
@@ -149,6 +218,7 @@ const categories = [
                   src={post.data.coverImage}
                   alt={post.data.name}
                   class="card-img"
+                  loading="lazy"
                 />
               )}
               <h3 class="card-title">{post.data.name}</h3>
@@ -165,11 +235,12 @@ const categories = [
   )
 }
 
+<!-- Recent Interviews -->
 {
   recentInterviews.length > 0 && (
     <div class="section section-alt">
       <div class="container">
-        <h2 class="section-heading">Recent Interviews</h2>
+        <h2 class="section-heading-display">Recent Interviews</h2>
         <div class="grid grid-2">
           {recentInterviews.map((interview) => (
             <a href={`/interviews/${interview.slug}/`} class="card card-link">
@@ -178,6 +249,7 @@ const categories = [
                   src={interview.data.coverPhoto}
                   alt={interview.data.name}
                   class="card-img card-img-tall"
+                  loading="lazy"
                 />
               )}
               <h3 class="card-title">{interview.data.name}</h3>
@@ -196,12 +268,34 @@ const categories = [
             </a>
           ))}
         </div>
+        <div class="cta-center">
+          <a href="/interviews/" class="btn btn-secondary">View All Interviews</a>
+        </div>
       </div>
     </div>
   )
 }
 
-<!-- Newsletter Signup -->
+<!-- Testimonials -->
+<div class="testimonials-section">
+  <div class="container">
+    <h2 class="section-heading-display">
+      Thousands of Creators<br>Love Fairly Odd Streamers
+    </h2>
+    <div class="testimonial-grid">
+      {testimonials.map((t) => (
+        <div class="testimonial-card">
+          <p class="testimonial-text">"{t.text}"</p>
+          <p class="testimonial-author-name">{t.name}</p>
+          <p class="testimonial-author-handle">{t.handle}</p>
+          {t.role && <p class="testimonial-author-role">{t.role}</p>}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter -->
 <div class="section">
   <div class="container">
     <div class="newsletter-box">
@@ -228,4 +322,5 @@ const categories = [
     </div>
   </div>
 </div>
+
 </BaseLayout>
