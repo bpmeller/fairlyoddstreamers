@@ -24,82 +24,43 @@ const categories = [
     name: 'Sponsorships',
     slug: 'sponsorships',
     description: 'Browse 100+ brands offering sponsorships or affiliate opportunities.',
-    image: '/images/RESOURCE-sponsorships.png',
+    emoji: '💰',
   },
   {
     name: 'Analytics',
     slug: 'analytics',
     description: 'Track and analyze your stream performance.',
-    image: '/images/RESOURCE-analytics.png',
+    emoji: '📊',
   },
   {
     name: 'Bots',
     slug: 'bots',
     description: 'Chat moderation and engagement tools.',
-    image: '/images/RESOURCE-bots.png',
+    emoji: '🤖',
   },
   {
     name: 'Music',
     slug: 'music',
-    description: "Stream-safe music without DMCA worries.",
-    image: '/images/RESOURCE-music.png',
+    description: 'Stream-safe music without DMCA worries.',
+    emoji: '🎵',
   },
   {
     name: 'Graphics',
     slug: 'graphics',
     description: 'Overlays, alerts, and graphic design tools.',
-    image: '/images/RESOURCE-graphics.png',
+    emoji: '🎨',
   },
   {
     name: 'Broadcast Tools',
     slug: 'stream-software',
     description: 'The best software for going live.',
-    image: '/images/RESOURCE-software.png',
+    emoji: '📹',
   },
   {
     name: 'Streaming Tools',
     slug: 'twitch-tools',
     description: 'Platform-specific tools and extensions.',
-    image: '/images/RESOURCE-tools.png',
-  },
-];
-
-const testimonials = [
-  {
-    text: "I was interviewed by @fairlyoddstream and they were amazing to work with :D Please go read our interview.",
-    name: "Kayk",
-    handle: "Kaykrisify",
-    role: "Twitch Partner",
-  },
-  {
-    text: "Saw this on TikTok and ya'll deserve to know. This website has everything you might need in terms of streamer resources. It's a blessing for new streamers.",
-    name: "Kain",
-    handle: "vtuber",
-    role: "",
-  },
-  {
-    text: "Fairly Odd Streamers has a big list of sponsors known to sponsor streamers, and is another great resource :)",
-    name: "Kati",
-    handle: "Katliente",
-    role: "Twitch Partner",
-  },
-  {
-    text: "Thank you for this cool opportunity to do an interview! @fairlyoddstream is a wonderful resource for all streamers alike from the basics to sponsorships!",
-    name: "Mini",
-    handle: "MinishKat",
-    role: "Twitch & NZXT Partner",
-  },
-  {
-    text: "@fairlyoddstream — the master site for sponsorships and affiliations. Provides access to over 100 different sponsorships with info on the company, requirements, and the link to apply!",
-    name: "Ariq",
-    handle: "Aziouxeen",
-    role: "Twitch Streamer",
-  },
-  {
-    text: "The website of Fairly Odd Streamers is a great resource for applying for some sponsorships!",
-    name: "Cari",
-    handle: "Carlewheezers",
-    role: "Horror & Variety Streamer",
+    emoji: '⚙️',
   },
 ];
 ---
@@ -125,7 +86,7 @@ const testimonials = [
           <input type="hidden" name="_subject" value="New FOS Newsletter Signup">
           <input type="hidden" name="_next" value="https://fairlyoddstreamers.com/?subscribed=true">
           <input type="email" name="email" placeholder="Email" required />
-          <button type="submit" class="btn btn-gold">Sign Up</button>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
         </form>
         <p class="hero-disclaimer">Get weekly tips sent straight to your inbox!</p>
       </div>
@@ -155,16 +116,14 @@ const testimonials = [
     <div class="grid grid-4">
       {categories.map((cat) => (
         <a href={`/resources/${cat.slug}/`} class="category-card">
-          <img src={cat.image} alt={cat.name} class="category-card-img" loading="lazy" />
-          <div class="category-card-body">
-            <h3>{cat.name}</h3>
-            <p>{cat.description}</p>
-          </div>
+          <span class="category-card-icon">{cat.emoji}</span>
+          <h3>{cat.name}</h3>
+          <p>{cat.description}</p>
         </a>
       ))}
     </div>
     <div class="cta-center" style="margin-top: var(--spacing-2xl);">
-      <a href="/resources/" class="btn btn-outline-green">Take Me To The Resource Center</a>
+      <a href="/resources/" class="btn btn-secondary">Take Me To The Resource Center</a>
     </div>
   </div>
 </div>
@@ -195,9 +154,7 @@ const testimonials = [
           ))}
         </div>
         <div class="cta-center">
-          <a href="/resources/sponsorships/" class="btn btn-primary">
-            View All Sponsorships
-          </a>
+          <a href="/resources/sponsorships/" class="btn btn-primary">View All Sponsorships</a>
         </div>
       </div>
     </div>
@@ -224,7 +181,6 @@ const testimonials = [
               <h3 class="card-title">{post.data.name}</h3>
               <p class="line-clamp-2">{post.data.postSummary || ''}</p>
               <div class="card-meta">
-                {post.data.author && <span class="text-accent">{post.data.author}</span>}
                 {post.data.readTime && <span>{post.data.readTime}</span>}
               </div>
             </a>
@@ -276,25 +232,6 @@ const testimonials = [
   )
 }
 
-<!-- Testimonials -->
-<div class="testimonials-section">
-  <div class="container">
-    <h2 class="section-heading-display">
-      Thousands of Creators<br>Love Fairly Odd Streamers
-    </h2>
-    <div class="testimonial-grid">
-      {testimonials.map((t) => (
-        <div class="testimonial-card">
-          <p class="testimonial-text">"{t.text}"</p>
-          <p class="testimonial-author-name">{t.name}</p>
-          <p class="testimonial-author-handle">{t.handle}</p>
-          {t.role && <p class="testimonial-author-role">{t.role}</p>}
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-
 <!-- Newsletter -->
 <div class="section">
   <div class="container">
@@ -308,15 +245,8 @@ const testimonials = [
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New FOS Newsletter Signup">
         <input type="hidden" name="_next" value="https://fairlyoddstreamers.com/?subscribed=true">
-        <input
-          type="email"
-          name="email"
-          placeholder="your@email.com"
-          required
-        />
-        <button type="submit" class="btn btn-primary">
-          Subscribe
-        </button>
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
       <p class="newsletter-disclaimer">No spam, unsubscribe anytime.</p>
     </div>

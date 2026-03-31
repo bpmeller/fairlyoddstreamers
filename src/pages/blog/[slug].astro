@@ -37,13 +37,6 @@ const { Content } = await post.render();
       <!-- Meta Info -->
       <div class="article-meta">
         {
-          post.data.author && (
-            <div>
-              <strong>By</strong> {post.data.author}
-            </div>
-          )
-        }
-        {
           post.data.publishDate && (
             <div>
               {new Date(post.data.publishDate).toLocaleDateString('en-US', {
