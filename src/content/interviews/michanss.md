@@ -12,7 +12,7 @@ discord: "https://discord.com/invite/dxab33h"
 followers: 3732
 views: 128231
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f62328c3967d07ad8c62_608f3605c1aeda5df2f80838_Michanss%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-03
+publishDate: 2025-11-11
 ---
 
 ## Tell us your history with video games

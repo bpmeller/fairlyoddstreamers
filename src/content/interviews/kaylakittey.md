@@ -12,7 +12,7 @@ discord: "https://discord.gg/JEprxJkdxH"
 followers: 4275
 views: 61156
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61fd0f286c98c9a1e32_6107ee6d1216ec9e93e50671_KaylaKittey%2520Interview%2520Post.jpeg"
-publishDate: 2021-08-05
+publishDate: 2025-12-18
 ---
 
 ## Tell us your history with video games 

@@ -12,7 +12,7 @@ discord: "https://discord.gg/aEX5CyP"
 followers: 7842
 views: 243524
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f620e891729706822c9d_60bba157f8caa4667ae3f97b_Krewlex%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-10
+publishDate: 2025-09-16
 ---
 
 ## Tell us your history with video games 

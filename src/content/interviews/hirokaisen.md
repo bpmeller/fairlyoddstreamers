@@ -11,7 +11,7 @@ youtube: "https://www.youtube.com/channel/UCM_1KWbt_n92k_IzV0QYvRg"
 followers: 28153
 views: 33517
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61dcb1f1c2f325f1365_6029510fd73cb6833262045d_Hirokaisen%2520Interview%2520Post.png"
-publishDate: 2021-02-23
+publishDate: 2025-11-11
 ---
 
 ## Tell us your history with video games in general

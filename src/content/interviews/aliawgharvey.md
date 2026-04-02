@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/channel/UCG_416cShYpwI7X3cKS8Frg"
 followers: 39392
 views: 111560
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61652d3de080391946a_60b805f7080b8e25cebb2a07_alia%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-04
+publishDate: 2026-05-08
 ---
 
 ## Tell us your history with video games 

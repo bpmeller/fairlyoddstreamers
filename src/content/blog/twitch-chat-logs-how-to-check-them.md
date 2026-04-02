@@ -9,7 +9,7 @@ featured: false
 metaDescription: Why is it important to view your chat logs as a streamer? In this post we break it down for you and list a few of our favorite chat log tools.
 postSummary: In this post we explain chat logs and why you should check them.
 readTime: 4 min read
-publishDate: 2024-01-30
+publishDate: 2025-05-08
 ---
 
 Reviewing your Twitch chat logs is important for engaging your audience. Because when your viewers actively chat with you and each other—there’s a better chance they’ll stick around.

@@ -12,7 +12,7 @@ discord: "https://discord.gg/UGyd9pT"
 followers: 3726
 views: 66528
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61af5cd55029b5d4d8b_60d9d184e8743450d9d092b6_Deiviamos%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-05
+publishDate: 2025-09-10
 ---
 
 ## Tell us your history with video games 

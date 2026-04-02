@@ -11,7 +11,7 @@ youtube: "https://www.youtube.com/kyoryuhunter"
 followers: 3208
 views: 167208
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6211ec4b6735f3981e2_600338d23643ec0c0a041e0d_KyoryuHunter%2520Interview%2520Post.png"
-publishDate: 2021-01-25
+publishDate: 2025-11-14
 ---
 
 KyoryuHunter enjoys streaming retro horror games, where he's carved out a niche within the Twitch community. He also spent four years living in Japan where he was an English teacher. He bonded with his students over games and amassed a large collection of Japanese games to help learn the language. Now Kyoryu is back in the United States and streams full-time. Let's learn more about his journey. 

@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/channel/UCjTeDxCaLmofR-WX6HGV3wQ"
 followers: 1398
 views: 432152
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f619e7f43df1874fdbd5_60534eb349334710dc03df32_Bluee%2520Interview%2520Post.png"
-publishDate: 2021-03-18
+publishDate: 2025-03-23
 ---
 
 ## Tell us your history with video games

@@ -13,7 +13,7 @@ discord: "https://discord.gg/cmM9CUn2wT"
 followers: 21309
 views: 50724
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6205edcba413c74696e_60e1d258df8a0c6f1740d47a_Kettsley%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-12
+publishDate: 2026-05-24
 ---
 
 ## Tell us your history with video games 

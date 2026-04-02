@@ -11,7 +11,7 @@ discord: "https://discord.gg/couriway"
 followers: 42516
 views: 474266
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f619b44965b0c3266047_603904b27bd22eebd898f274_Couriway%2520Interview%2520Post.png"
-publishDate: 2021-02-26
+publishDate: 2025-10-09
 ---
 
 ## Tell us your history with video games in general

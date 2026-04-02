@@ -13,7 +13,7 @@ discord: "https://discord.gg/ceweiner"
 followers: 41042
 views: 585678
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f619d0f286c98c9a1716_60931e59fb297168898b8d61_Ceweina%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-06
+publishDate: 2025-02-03
 ---
 
 ## Tell us your history with video games

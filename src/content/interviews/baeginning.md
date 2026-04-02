@@ -13,7 +13,7 @@ discord: "https://discord.com/invite/vuWES52"
 followers: 3420
 views: 79186
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f617323df832a2bcbf19_60aa555a5925fd2c2cb44332_Baeginning%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-01
+publishDate: 2025-04-08
 ---
 
 ## Tell us your history with video games 

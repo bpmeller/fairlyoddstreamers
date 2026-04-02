@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/channel/UCeF8cAGaR2emn1bILIwaYXg"
 discord: "https://www.discord.gg/gracefulfps"
 followers: 14287
 views: 304422
-publishDate: 2020-03-31
+publishDate: 2026-04-06
 ---
 
 Graceful is not only one of the best professional Overwatch players in the world, but he's also one of the most positive streamers in the Twitch community. He's a full flex player and has reached rank #1 in multiple Overwatch seasons. With the help of his friend Mendokusaii, and the kindness of the Overwatch community, he was able to make his dreams come true.

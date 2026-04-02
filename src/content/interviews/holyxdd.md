@@ -10,7 +10,7 @@ twitter: "https://twitter.com/TheOnlyHolyXD"
 followers: 17900
 views: 65234
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61e323df832a2bcc73e_5fea03a09063f99784007b08_HOLYXDD%2520Interview%2520Post.png"
-publishDate: 2020-12-21
+publishDate: 2025-04-27
 ---
 
 HolyXDD's first experience with gaming started back when he was just three years old. That sparked his passion for gaming. 

@@ -12,7 +12,7 @@ discord: "https://discord.com/invite/PEPex9C"
 followers: 6907
 views: 48281
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6275edcba413c747401_607d725eb5ecc195e9449644_UniqueGeese%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-19
+publishDate: 2025-09-06
 ---
 
 ## Tell us your history with video games

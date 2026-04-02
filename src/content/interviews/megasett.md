@@ -13,7 +13,7 @@ discord: "https://discord.gg/hTywtmQ"
 followers: 7017
 views: 478921
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6237591e40f7e4cf2fd_60bbacf49d47da79faacc3a7_Megasett%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-21
+publishDate: 2025-11-24
 ---
 
 ## Tell us your history with video games 

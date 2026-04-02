@@ -13,7 +13,7 @@ discord: "https://www.discord.gg/viiki"
 followers: 17625
 views: 202636
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f62910cb604f09ad0146_609e75fbe81509707d5350d0_Viiki%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-13
+publishDate: 2025-09-28
 ---
 
 ## Tell us your history with video games 

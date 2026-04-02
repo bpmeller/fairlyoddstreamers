@@ -12,7 +12,7 @@ discord: "https://discord.gg/sgGDagcsAJ"
 followers: 3756
 views: 34304
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61ee18437cc1d61c14f_60816fbc9ec60b649ce97e94_QueenNovaa%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-22
+publishDate: 2026-12-11
 ---
 
 ## Tell us your history with video games

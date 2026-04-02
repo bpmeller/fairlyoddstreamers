@@ -13,7 +13,7 @@ discord: "https://discord.gg/U7r5yaA"
 followers: 14326
 views: 73516
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f620f2005cf7ecef9bac_60a162b4580ecd0d269467a7_killerexlive%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-20
+publishDate: 2026-07-19
 ---
 
 ## Tell us your history with video games

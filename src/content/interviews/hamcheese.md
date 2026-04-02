@@ -10,7 +10,7 @@ youtube: "https://www.youtube.com/channel/UCElBtkDssQx973LawAJniPA"
 followers: 18994
 views: 83260
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61de7f43df1874fe0dc_6010b44cd9b73be1079cffb7_Hamcheese%2520Interview%2520Post.png"
-publishDate: 2021-01-28
+publishDate: 2026-12-18
 ---
 
 ## Tell us your history with video games in general

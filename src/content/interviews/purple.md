@@ -11,7 +11,7 @@ youtube: "https://www.youtube.com/user/Purplekoolaidmans"
 discord: "https://discordapp.com/invite/purple"
 followers: 12557
 views: 578995
-publishDate: 2020-04-10
+publishDate: 2026-01-20
 ---
 
 ### How’d you get your gaming name?

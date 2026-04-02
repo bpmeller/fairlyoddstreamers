@@ -12,7 +12,7 @@ discord: "https://discord.com/invite/nRC4yWJ"
 followers: 4978
 views: 68605
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f624e18437cc1d61c456_60aa544e7f626c769ed5eb2f_Miki%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-27
+publishDate: 2025-08-01
 ---
 
 ## Tell us your history with video games 

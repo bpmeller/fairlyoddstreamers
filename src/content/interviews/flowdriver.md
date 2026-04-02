@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/channel/UCMDzuFKq6ielUaCg82hzWgw"
 discord: "https://discord.gg/flownation"
 followers: 57102
 views: 416244
-publishDate: 2020-04-07
+publishDate: 2025-12-22
 ---
 
 ### How’d you get your gaming name?

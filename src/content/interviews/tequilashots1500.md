@@ -13,7 +13,7 @@ discord: "https://discord.gg/SCaYQjU"
 followers: 4503
 views: 251259
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6264006834d4d2176d9_60e6f0512856b115152e36ae_TequilaShots%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-08
+publishDate: 2025-12-16
 ---
 
 ## Tell us your history with video games

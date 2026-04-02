@@ -8,7 +8,7 @@ category: twitch
 featured: false
 metaDescription: As your Twitch channel grows, you may find that the original name that you chose doesn’t quite fit anymore. See how you can change your Twitch name here 👉
 readTime: 3 min read
-publishDate: 2024-01-29
+publishDate: 2026-01-19
 ---
 
 As your Twitch channel grows, you may find that the original name that you chose doesn’t quite fit anymore. Maybe it’s a bit immature or you pivoted the focus of your channel. 

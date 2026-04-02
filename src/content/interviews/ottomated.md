@@ -12,7 +12,7 @@ discord: "https://discord.gg/9mwuVNA"
 followers: 54026
 views: 469130
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f625e7f43df1874fe7d5_6011693b8926c0558ed913c7_Ottomated%2520Interview%2520Post.png"
-publishDate: 2021-02-04
+publishDate: 2025-09-25
 ---
 
 ## Tell us your history with video games in general

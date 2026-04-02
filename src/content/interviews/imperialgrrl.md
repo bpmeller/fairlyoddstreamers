@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/imperialgrrl/"
 discord: "https://discord.gg/imperialgrrl"
 followers: 19602
 views: 2435100
-publishDate: 2020-02-20
+publishDate: 2025-06-13
 ---
 
 Imperialgrrl is a full-time mom and part-time streamer with a knack for sewing! You may see her streaming a video game or a sewing session where she's making her next cosplay outfit. All we know is if you're looking for a fun creative streamer, she just may be your gal.

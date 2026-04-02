@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/c/JowyBear"
 discord: "https://discordapp.com/invite/8ZzxyTJ"
 followers: 32099
 views: 581858
-publishDate: 2020-04-09
+publishDate: 2025-05-05
 ---
 
 ### How’d you get your gaming name?

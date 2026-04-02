@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/mopgarden/"
 youtube: "https://www.youtube.com/user/mopgarden"
 followers: 56118
 views: 949213
-publishDate: 2020-04-03
+publishDate: 2025-11-10
 ---
 
 MopGarden is a full-time variety streamer from Ontario. In this interview you'll learn how she got started, her accomplishments throughout her streaming career, how she's suffered from self-defeat, and so much more.**‍**

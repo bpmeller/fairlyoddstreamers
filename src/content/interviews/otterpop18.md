@@ -12,7 +12,7 @@ discord: "https://discord.gg/D5SR59E"
 followers: 9007
 views: 125394
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6257cc78915f5a67388_60991cbd6e92ba211ce54478_Otterpop18%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-10
+publishDate: 2025-03-12
 ---
 
 ## Tell us your history with video games

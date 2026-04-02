@@ -10,7 +10,7 @@ twitter: "https://twitter.com/ybbaaabby"
 instagram: "https://www.instagram.com/ybbaaabby/"
 youtube: "https://www.youtube.com/c/ybbaaabby"
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f627726ca70c22589b53_5ff70e55650715488b3719bf_ybbaaabby%2520Interview%2520Post.png"
-publishDate: 2021-01-11
+publishDate: 2025-12-10
 ---
 
 Abby "ybbaaabby" Russell is a comedian, streamer, and former content producer in the video game industry. She's one of the funniest and most well-spoken streamers we've had the pleasure to interview. 

@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/ivanahyde__"
 followers: 8564
 views: 168902
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61ee7f402b9cbefd89b_6019dff013e5a4a95f4087ee_IvanaHyde%2520Interview%2520Post.png"
-publishDate: 2021-02-08
+publishDate: 2025-11-16
 ---
 
 ## Tell us your history with video games in general

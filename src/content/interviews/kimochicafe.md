@@ -12,7 +12,7 @@ discord: "https://discord.gg/6mmVTFzeRQ"
 followers: 5465
 views: 75756
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f620c2124dbce9898c18_60e1d7df97507eedf324840d_KimochiCafe%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-15
+publishDate: 2025-06-08
 ---
 
 ## Tell us your history with video games 

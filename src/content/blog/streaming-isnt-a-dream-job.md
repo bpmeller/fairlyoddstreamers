@@ -8,7 +8,7 @@ category: twitch
 featured: false
 metaDescription: Being a full-time streamer isn't as glamorous as you think. Let's see what it's really like to be a top 1% streamer and how easy (or hard) it is.
 readTime: 11 min read
-publishDate: 2024-01-29
+publishDate: 2026-02-27
 ---
 
 The advancement of technology has generated millions of new jobs in a stunningly short amount of time. 50 years ago there were no social media managers, web developers, drone operators or data scientists. And if you heard someone say "I want to be a streamer/YouTuber/vlogger" 20 years ago, you'd think "what's that?"

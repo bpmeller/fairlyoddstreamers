@@ -8,7 +8,7 @@ category: twitch
 featured: false
 metaDescription: Twitch Teams is a Twitch Partner Program feature that unites and connects streamers together as a community. In this post we explain the benefits of joining a team.
 readTime: 7 min read
-publishDate: 2024-01-30
+publishDate: 2025-11-03
 ---
 
 Community and collaboration are the keys to success when streaming. 

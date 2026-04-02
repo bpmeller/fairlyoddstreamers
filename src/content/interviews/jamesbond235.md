@@ -13,7 +13,7 @@ discord: "https://discord.gg/K7vFuFT6Du"
 followers: 23067
 views: 223044
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61fbe1ffa0f365ed4bd_60ef9750254171f39320e16f_JamesBond235%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-22
+publishDate: 2025-11-15
 ---
 
 ## Tell us your history with video games in general

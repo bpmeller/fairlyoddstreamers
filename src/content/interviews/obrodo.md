@@ -12,7 +12,7 @@ discord: "https://discord.gg/QKFrpWFZFa"
 followers: 32635
 views: 25514
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f624d351decb8d4902f6_608a9e1b5ecacc1d02ca5f75_Oborodo%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-29
+publishDate: 2026-09-20
 ---
 
 ## Tell us your history with video games

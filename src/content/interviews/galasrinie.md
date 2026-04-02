@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/galasrinie/"
 youtube: "https://www.youtube.com/channel/UCGWPeJo083eVvZnzMNzosXA/videos?view_as=subscriber"
 followers: 5303
 views: 164572
-publishDate: 2021-04-01
+publishDate: 2026-03-18
 ---
 
 ## Tell us your history with video games

@@ -13,7 +13,7 @@ discord: "https://discord.gg/Na35QuN"
 followers: 2717
 views: 52832
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f625af3a6f9f11826d68_6074408dbc149d2033918705_RayEatsCookies%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-12
+publishDate: 2025-08-01
 ---
 
 ## Tell us your history with video games

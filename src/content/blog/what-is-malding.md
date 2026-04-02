@@ -9,7 +9,7 @@ featured: false
 metaDescription: "If you are a gamer, you may have come across the term \"malding\" in livestream chats. This term is a combination of \"mad\" and \"balding\" and is used to describe gamers who get angry while gaming."
 postSummary: So bad, so mad, so bald, so mald.
 readTime: 2 min read
-publishDate: 2024-01-19
+publishDate: 2025-03-12
 ---
 
 ## The humorous origin of *malding*

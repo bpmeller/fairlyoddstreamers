@@ -10,7 +10,7 @@ twitter: "https://twitter.com/apestyles"
 followers: 21731
 views: 486576
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61617f515e82d18428b_603a5904c64cec405f9d2512_ApestylesPoker%2520Interview%2520Post.png"
-publishDate: 2021-03-04
+publishDate: 2026-02-19
 ---
 
 ## Tell us your history with poker/gambling

@@ -12,7 +12,7 @@ discord: "https://www.discord.me/bakamaica"
 followers: 10245
 views: 147233
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f617c815622a749a2903_60295a418790231ed112f3e4_BakaMaica%2520Interview%2520Post.png"
-publishDate: 2021-02-22
+publishDate: 2026-10-01
 ---
 
 ## Tell us your history with video games in general

@@ -11,7 +11,7 @@ youtube: "http://youtube.com/c/anikichadlive"
 followers: 28476
 views: 66274
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6162638a92e74a21491_6011719a1ab2dd3c55e2f1c2_AnikiChad%2520Interview%2520Post.png"
-publishDate: 2021-02-04
+publishDate: 2025-03-24
 ---
 
 ## Tell us your history with video games in general

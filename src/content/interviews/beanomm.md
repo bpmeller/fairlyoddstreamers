@@ -13,7 +13,7 @@ discord: "https://discord.gg/h8WfUMW"
 followers: 9875
 views: 22331
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61793c1fcd9b5d7168f_60a15c3645cf164c0d550e01_Beanomm%2520Interview%2520Post.jpeg"
-publishDate: 2021-05-17
+publishDate: 2026-12-18
 ---
 
 ## Tell us your history with video games 

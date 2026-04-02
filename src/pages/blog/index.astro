@@ -35,10 +35,7 @@ const sorted = blog.sort((a, b) => new Date(b.data.publishDate || 0).getTime() -
               <h3 class="card-title">{post.data.name}</h3>
               <p class="line-clamp-2">{post.data.postSummary || ''}</p>
               <div class="card-meta">
-                <div>
-                  {post.data.author && <span>{post.data.author}</span>}
-                  {post.data.publishDate && <span> • {new Date(post.data.publishDate).toLocaleDateString()}</span>}
-                </div>
+                {post.data.publishDate && <span>{new Date(post.data.publishDate).toLocaleDateString()}</span>}
                 {post.data.readTime && <span>{post.data.readTime}</span>}
               </div>
             </a>

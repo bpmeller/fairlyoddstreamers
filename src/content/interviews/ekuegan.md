@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/ekuegan/"
 youtube: "https://www.youtube.com/c/Ekuegan"
 followers: 31280
 views: 1317913
-publishDate: 2020-04-02
+publishDate: 2026-04-25
 ---
 
 Ekuegan started off as a console streamer playing the original Destiny. With the release of Destiny 2, you'll see him stream on Xbox, Playstation and PC. He's a partnered Twitch streamer, admin of Streamboat Gaming, and a member of Team eXcellence. Although he almost exclusively plays Destiny 2, he's open to playing new games in the future.**‍**

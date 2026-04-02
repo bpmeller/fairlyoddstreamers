@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/user/Danotage"
 discord: "https://discord.gg/danotage"
 followers: 21173
 views: 2117620
-publishDate: 2020-04-01
+publishDate: 2026-02-13
 ---
 
 Danotage is one of the most interesting streamers we've interviewed yet. With his academic background and foray into podcasting, Danotage found a golden opportunity to use his set of skills to become a Twitch broadcaster. Read the full interview to find out how he became a full-time streamer and how he gives back to charities he truly belives in.**‍**

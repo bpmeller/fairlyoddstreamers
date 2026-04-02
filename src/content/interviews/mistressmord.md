@@ -13,7 +13,7 @@ discord: "https://discord.gg/AYHyTRQ"
 followers: 48782
 views: 843206
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f624f0e113c150776c89_603508268558e30fc5cb4630_MistressMord%2520Interview%2520Post.png"
-publishDate: 2021-02-25
+publishDate: 2026-03-17
 ---
 
 ## Tell us your history with video games in general

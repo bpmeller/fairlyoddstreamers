@@ -9,7 +9,7 @@ featured: false
 metaDescription: A private Twitch stream is an exclusive stream where you restrict access to a certain audience, such as your friends. Learn how to setup a private stream.
 postSummary: A private Twitch stream is an exclusive stream where you restrict access to a certain audience, such as your friends. Learn how to setup a private stream.
 readTime: 4 min read
-publishDate: 2024-02-22
+publishDate: 2025-07-22
 ---
 
 I bet you're interested in setting up a private Twitch stream. Why else would you be here?

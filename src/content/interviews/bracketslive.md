@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/youtubebrackets"
 followers: 24595
 views: 153131
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6199370c9a514a5cf29_60bba694990136fb37a1e5b0_BracketsLIVE%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-17
+publishDate: 2025-06-09
 ---
 
 ## Tell us your history with video games 

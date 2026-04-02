@@ -13,7 +13,7 @@ discord: "https://discordapp.com/invite/WARP2Ar"
 followers: 5307
 views: 263472
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61c28c3967d07ad8527_611fb1437f3b58db1e056304_Finamenon%2520Interview%2520Post.jpeg"
-publishDate: 2021-08-24
+publishDate: 2025-04-22
 ---
 
 ## Tell us your history with video games 

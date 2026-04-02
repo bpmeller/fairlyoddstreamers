@@ -13,7 +13,7 @@ discord: "https://discord.gg/5rb6SPK"
 followers: 30568
 views: 59696
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f627e7f402b9cbefe4ed_5ff0dbc851352bd0eaf2a0a7_UncivilQueen%2520Interview%2520Post.png"
-publishDate: 2021-01-04
+publishDate: 2025-03-22
 ---
 
 UncivilQueen is an ultra-competitive gamer, but her talent expands wider than just *gaming*. She's a talented streamer. Whether it's looking at analytics or creating new content on different forms of social media, she knows how to grow her audience and retain viewers. 

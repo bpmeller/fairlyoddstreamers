@@ -13,7 +13,7 @@ discord: "https://discord.gg/5BxSnRJ"
 followers: 12937
 views: 34061
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6229370c9a514a5d928_611acf3a735f3f0b16f43a7a_MadeofJade%2520Interview%2520Post.jpeg"
-publishDate: 2021-08-19
+publishDate: 2026-05-18
 ---
 
 ## Tell us your history with video games 

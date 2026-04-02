@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/littlesiha/"
 youtube: "https://www.youtube.com/littlesiha"
 followers: 108834
 views: 6851065
-publishDate: 2020-04-12
+publishDate: 2025-10-15
 ---
 
 Littlesiha's journey to streaming was never anticipated. After 3 months of playing Just Dance, she qualified to compete at the Electronic Sports World Cup. She's now a 2-time US ESWC Champion. Littlesiha has since become a Twitch partner and spends time helping the GameChanger Charity, among other things. Read the full interview below!**‍**

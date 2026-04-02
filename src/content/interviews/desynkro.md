@@ -13,7 +13,7 @@ discord: "https://discord.gg/qptZkCj"
 followers: 7027
 views: 101584
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61bbdfc0ad4c8710d23_60bba0efd8ce5019f107faf4_DeSynkro%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-07
+publishDate: 2026-10-28
 ---
 
 ## Tell us your history with video games 

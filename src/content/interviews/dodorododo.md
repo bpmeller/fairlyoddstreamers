@@ -12,7 +12,7 @@ discord: "https://discord.gg/55QYF48"
 followers: 11858
 views: 192921
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61bb44965b0c3266215_607833c43820bd1a55207138_Dodorododo%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-15
+publishDate: 2026-02-02
 ---
 
 ## Tell us your history with video games 

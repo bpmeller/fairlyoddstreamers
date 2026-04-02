@@ -11,7 +11,7 @@ discord: "https://discord.gg/blueandqueenie"
 followers: 69289
 views: 6792993
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f618e7f402b9cbefd04f_6086b5125e6cdb846bd9f11e_BlueandQueenie%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-26
+publishDate: 2026-05-26
 ---
 
 ## Tell us your history with video games

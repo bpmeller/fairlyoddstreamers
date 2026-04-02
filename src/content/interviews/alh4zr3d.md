@@ -12,7 +12,7 @@ discord: "https://discord.gg/cyNv6byC8u"
 followers: 13492
 views: 22640
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f616f5cd55029b5d4232_606afd4bee6c2764fa0a246a_alh4zr3d%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-05
+publishDate: 2026-02-01
 ---
 
 ## Tell us your history with infosec and hacking

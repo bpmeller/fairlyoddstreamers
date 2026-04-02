@@ -11,7 +11,7 @@ youtube: "https://www.youtube.com/channel/UCHw7uZcEFhbUKyHyz9gOG6A"
 followers: 9866
 views: 79644
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f620af3a6f9f11826a3a_6048d1f8f7ef8ff10a03c4b0_Kuzuryio%2520Interview%2520Post.png"
-publishDate: 2021-03-11
+publishDate: 2025-01-28
 ---
 
 ## Tell us your history with video games

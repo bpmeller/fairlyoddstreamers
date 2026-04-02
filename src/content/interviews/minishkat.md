@@ -9,7 +9,7 @@ twitch: "https://www.twitch.tv/minishkat"
 twitter: "http://www.twitter.com/minishkat"
 discord: "https://discord.gg/BdDzdJT"
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f624cb1f1c2f325f18ae_60032d5108fd5f4af66d572f_MinishKat%2520Interview%2520Post.png"
-publishDate: 2021-01-21
+publishDate: 2026-12-09
 ---
 
 MinishKat started streaming at the beginning of 2020. She almost exclusively plays Zelda games, ranging from Ocarina of Time to Breath of the Wild. She was fortunate enough to build a welcoming channel that encouraged positivity, something the Zelda community was lacking at the time. This helped her quickly build a following and she absolutely loves to stream nowadays. 

@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/empyretv/"
 youtube: "https://www.youtube.com/channel/UCcF690wuSxmtP-KoDKpcnJw/videos"
 followers: 13806
 views: 297458
-publishDate: 2020-04-04
+publishDate: 2025-02-28
 ---
 
 Empyre is a full-time variety streamer who hails from Canada. Since becoming a full-timer, he eats, sleeps and breathes Twitch and creating content for his community. Learn how he got his name, his accomplishments, his hobbies, and more throughout the interview!**‍**

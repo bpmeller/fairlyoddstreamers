@@ -13,7 +13,7 @@ discord: "https://discord.gg/3GRJmQy"
 followers: 23388
 views: 204287
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61c8b6a185c3aa51f6e_6000cb861349ee2f50beb4bd_GabbyDM%2520Interview%2520Post.png"
-publishDate: 2021-01-18
+publishDate: 2026-02-20
 ---
 
 Gabby started playing games back when she was little. Before she knew it, she was topping the leaderboards among her household rivals whenever playing Call of Duty. Fast forward a few years, she decides to give streaming a shot while still in college, which was tough to balance due to the high workload. But she made it work and is now a Twitch Partner. 

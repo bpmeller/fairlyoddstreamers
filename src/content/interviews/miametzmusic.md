@@ -12,7 +12,7 @@ discord: "https://discord.gg/mkEzMvv"
 followers: 9181
 views: 363362
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f62387e7666ef8506962_602142ffd4698e8d7b4f294b_MiaMetz%2520Interview%2520Post.png"
-publishDate: 2021-02-11
+publishDate: 2025-11-18
 ---
 
 ## Tell us your history with music

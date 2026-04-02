@@ -13,7 +13,7 @@ discord: "https://discord.gg/4vcxDqr"
 followers: 4417
 views: 131537
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f62787e7666ef8506b9e_60d9ce889972a521bc190b4a_Xinxinwong%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-28
+publishDate: 2026-12-23
 ---
 
 ## Tell us your history with video games 

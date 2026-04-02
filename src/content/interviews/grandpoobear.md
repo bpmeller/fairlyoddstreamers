@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/grandpoobear"
 discord: "https://discord.gg/0gOY9qyDVUxk59ar"
 followers: 157076
 views: 6167034
-publishDate: 2020-04-11
+publishDate: 2025-07-09
 ---
 
 GrandPOOBear is a Twitch streamer and speedrunner who has become known as one of the country's best Mario players. He has performed Mario speedruns at marathon events like AGDQ, SGDQ, and hosted his own event, Mario Maker Colosseum.Learn about his deadly snowboarding accident and how it led him to becoming a streamer.

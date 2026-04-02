@@ -13,7 +13,7 @@ discord: "https://discord.gg/hCq9G2"
 followers: 9401
 views: 57956
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61cfa749671febf4188_603906d3d2741660c8cfec37_FeRiley%2520Interview%2520Post.png"
-publishDate: 2021-03-01
+publishDate: 2025-08-21
 ---
 
 ## Tell us your history with video games

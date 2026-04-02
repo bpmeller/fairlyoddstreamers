@@ -12,7 +12,7 @@ discord: "https://discord.com/invite/eTUMCe4"
 followers: 14233
 views: 85230
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61ee7f43df1874fe1f2_60fd7c823bc796082e3084f3_IntruderFox%2520Interview%2520Post.jpeg"
-publishDate: 2021-08-02
+publishDate: 2025-02-07
 ---
 
 ## Tell us your history with video games 

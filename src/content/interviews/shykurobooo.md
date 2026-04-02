@@ -13,7 +13,7 @@ discord: "https://discord.gg/gpqXzTF"
 followers: 5325
 views: 137776
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f626f71ee94c4a870783_60fd7c16584457803de5156e_Shykurobooo%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-29
+publishDate: 2025-06-27
 ---
 
 ## Tell us your history with music and video games 

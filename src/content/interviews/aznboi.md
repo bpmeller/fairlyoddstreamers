@@ -12,7 +12,7 @@ youtube: "https://www.youtube.com/channel/UCKYu73FIBTnZ9yZiNZFX0dw"
 followers: 21180
 views: 62586
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6164d543d9aa4035421_5ff0dcf46f3b7d96f65233b8_AznBoi%2520Interview%2520Post.png"
-publishDate: 2021-01-07
+publishDate: 2025-01-01
 ---
 
 AznBoi is just a teen who just recently started to take streaming seriously. Over the last six months he has amassed a huge social following by consistently creating content around his Twitch channel. He uses TikTok to expand his reach, and now has over 130k followers on the platform. 

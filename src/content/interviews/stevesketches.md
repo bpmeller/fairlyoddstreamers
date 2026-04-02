@@ -12,7 +12,7 @@ discord: "https://discord.gg/4v8XTRK"
 followers: 12608
 views: 280601
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f6262638a92e74a2251c_60bba2b7ee1515350e08117f_SteveSketches%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-14
+publishDate: 2025-04-02
 ---
 
 ## Tell us your history with art

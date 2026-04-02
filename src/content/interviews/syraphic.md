@@ -12,7 +12,7 @@ discord: "https://discord.gg/AxpbRbP"
 followers: 27381
 views: 449056
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f62628c3967d07ad8eb7_60fd7a962488cfb2663d305f_Syraphic%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-26
+publishDate: 2025-10-03
 ---
 
 ## Tell us your history with video games 

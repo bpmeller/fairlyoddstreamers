@@ -12,7 +12,7 @@ discord: "https://discord.gg/gXWuVpK"
 followers: 34560
 views: 256991
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f627e891729706823139_60be05b8a1b1cf4c5fe704df_WalteeWartooth%2520Interview%2520Post.jpeg"
-publishDate: 2021-06-24
+publishDate: 2026-07-07
 ---
 
 ## Tell us your history with video games 

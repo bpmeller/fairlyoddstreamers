@@ -27,10 +27,10 @@ const categories = [
     emoji: '💰',
   },
   {
-    name: 'Analytics',
-    slug: 'analytics',
-    description: 'Track and analyze your stream performance.',
-    emoji: '📊',
+    name: 'Graphics',
+    slug: 'graphics',
+    description: 'Overlays, alerts, and graphic design tools.',
+    emoji: '🎨',
   },
   {
     name: 'Bots',
@@ -39,16 +39,10 @@ const categories = [
     emoji: '🤖',
   },
   {
-    name: 'Music',
-    slug: 'music',
-    description: 'Stream-safe music without DMCA worries.',
-    emoji: '🎵',
-  },
-  {
-    name: 'Graphics',
-    slug: 'graphics',
-    description: 'Overlays, alerts, and graphic design tools.',
-    emoji: '🎨',
+    name: 'Analytics',
+    slug: 'analytics',
+    description: 'Track and analyze your stream performance.',
+    emoji: '📊',
   },
   {
     name: 'Broadcast Tools',
@@ -113,7 +107,7 @@ const categories = [
   <div class="container">
     <h2 class="section-heading-display">No Magic Necessary</h2>
     <p class="section-subheading">All the information you need to grow your channel, in one place.</p>
-    <div class="grid grid-4">
+    <div class="grid grid-3">
       {categories.map((cat) => (
         <a href={`/resources/${cat.slug}/`} class="category-card">
           <span class="category-card-icon">{cat.emoji}</span>

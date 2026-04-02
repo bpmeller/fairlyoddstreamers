@@ -12,7 +12,7 @@ youtube: "https://youtube.com/LeeshCapeesh"
 followers: 23507
 views: 1473267
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f622fa749671febf4487_60d9d02df8f8a912ab3f08aa_LeeshCapeesh%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-01
+publishDate: 2026-02-13
 ---
 
 ## Tell us your history with video games 

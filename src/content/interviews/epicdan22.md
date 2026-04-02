@@ -13,7 +13,7 @@ discord: "https://discord.gg/xTRpcNg"
 followers: 19785
 views: 280091
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61f10cb604f09acf2a2_6050a6d86bd44f65555a6f90_EpicDan22%2520Interview%2520Post.png"
-publishDate: 2021-03-15
+publishDate: 2025-02-13
 ---
 
 ## Tell us your history with video games

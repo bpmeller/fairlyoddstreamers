@@ -12,7 +12,7 @@ discord: "https://discord.gg/PMrZJ26z5Q"
 followers: 4174
 views: 94755
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f617af3a6f9f11825d0f_605c867e8024ee2ee1e5ec81_Batkitto%2520Interview%2520Post.jpeg"
-publishDate: 2021-03-25
+publishDate: 2026-04-23
 ---
 
 ## Tell us your history with video games

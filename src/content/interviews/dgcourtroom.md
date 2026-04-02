@@ -11,7 +11,7 @@ discord: "https://discord.gg/Cz3uRDccVc"
 followers: 1221
 views: 18097
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61bc815622a749a3038_6107ef0f61537d1a59fe5994_DGCourtroom%2520Interview%2520Post.jpeg"
-publishDate: 2021-08-09
+publishDate: 2025-10-07
 ---
 
 ## What’s your backstory and how did you get into streaming?

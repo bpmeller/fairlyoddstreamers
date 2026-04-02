@@ -10,7 +10,7 @@ twitter: "https://twitter.com/animeannieplays"
 instagram: "https://www.instagram.com/animeannieplays/"
 followers: 13142
 views: 87196
-publishDate: 2020-04-08
+publishDate: 2025-11-24
 ---
 
 ### How’d you get your gaming name?

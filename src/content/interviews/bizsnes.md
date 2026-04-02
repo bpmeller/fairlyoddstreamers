@@ -9,7 +9,7 @@ twitch: "https://www.twitch.tv/bizsnes"
 twitter: "https://twitter.com/Bizsnes"
 followers: 11465
 views: 274095
-publishDate: 2020-04-05
+publishDate: 2025-04-15
 ---
 
 "WTF am I watching?" -90% of users their first time watching BizSnes. Well, BizSnes is a boy trapped inside of a video game console! He has a roommate who, some might say, "pulls the strings." Check out the full interview to learn more about this fascinating character.**‍**

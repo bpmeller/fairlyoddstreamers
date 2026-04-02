@@ -13,7 +13,7 @@ discord: "https://discord.gg/pKaN5bc"
 followers: 19265
 views: 222567
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f619b44965b0c3266014_606f01deca9de57d2efc63c4_Chlooeeeexo%2520Interview%2520Post.jpeg"
-publishDate: 2021-04-08
+publishDate: 2025-02-12
 ---
 
 ## Tell us your history with video games

@@ -12,7 +12,7 @@ discord: "https://discord.gg/AHUzrAU"
 followers: 7564
 views: 295535
 ogImage: "https://uploads-ssl.webflow.com/64a306a998b13b212f4bbb35/64f5f61c7591e40f7e4cee1e_60ef9648280dc310fce9b315_Fiamma%2520Interview%2520Post.jpeg"
-publishDate: 2021-07-19
+publishDate: 2025-03-12
 ---
 
 ## Tell us your history with video games 

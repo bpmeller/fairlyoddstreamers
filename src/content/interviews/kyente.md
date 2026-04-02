@@ -11,7 +11,7 @@ instagram: "https://www.instagram.com/kyente/"
 youtube: "https://www.youtube.com/user/supkyente"
 followers: 34434
 views: 1338384
-publishDate: 2020-04-06
+publishDate: 2025-03-21
 ---
 
 Kyente is a full-time variety streamer. He’s also an aspiring actor and found Twitch at a pivotal point in his career. Be sure to check out his stream, where you’ll occasionally find two bunnies and Bunheadwhat making appearance from time to time.
